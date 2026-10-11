@@ -2,7 +2,8 @@
 
 Quality-criteria (QC) checklists used by TirSystem to review project
 documents and source code. Each checklist is one Markdown file, `qc-<type>.md`,
-with an ID such as `QC-BC-001`. Every criterion is tagged with an
+with an ID such as `QC-BC-001`. The checklists of documents are in `artifacts/`;
+those of source code, scripts and automation are in `code/`. Every criterion is tagged with an
 ISO/IEC 25010:2023 quality characteristic.
 
 ## Contents
@@ -13,7 +14,8 @@ ISO/IEC 25010:2023 quality characteristic.
   SSD, Operation Contract, Sequence Diagram, DCD, ERD, ADR
 - Cross-cutting: Language and Domain (applies to every artifact type written in
   the Product Owner's language), Domain Dictionary
-- Source code: Python, C, C++, C#
+- Source code and automation (`code/`): Python, C, C++, C#, shell, YAML files,
+  CI workflows (Gitea Actions, GitHub Actions)
 
 ## Use
 

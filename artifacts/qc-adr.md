@@ -56,7 +56,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-BC-001]: ./qc-business-case.md
 [QC-DCD-001]: ./qc-dcd.md
 [QC-ERD-001]: ./qc-erd.md
-[QC-PY-001]: ./qc-programming-python.md
-[QC-CL-001]: ./qc-programming-c.md
-[QC-CPP-001]: ./qc-programming-cpp.md
-[QC-CS-001]: ./qc-programming-csharp.md
+[QC-PY-001]: ../code/qc-programming-python.md
+[QC-CL-001]: ../code/qc-programming-c.md
+[QC-CPP-001]: ../code/qc-programming-cpp.md
+[QC-CS-001]: ../code/qc-programming-csharp.md
