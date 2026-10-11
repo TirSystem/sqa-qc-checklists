@@ -10,6 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-11 | Proposed | Jens Tirsvad Nielsen | — | Initial version: criteria for any `.yml` or `.yaml` file (configuration, CI, data) | [4af4688] |
+| 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Review conditions (RC-077): escaped the pipes in criterion 13, one Common Defects line per criterion, criterion 7 is the single definition of the five-line limit | pending |
 
 ---
 
@@ -31,13 +32,13 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 4 | A scalar that YAML would coerce to another type is quoted: `yes`, `no`, `on`, `off`, `null`, `~`, numbers with a leading zero, versions such as `1.10`, and values that contain `: ` or ` #` | Mandatory | Reliability | The `on` and `1.10` cases are the usual ones; quote versions and country codes |
 | 5 | Only safe, plain types are used: no language-specific tags (`!!python/object`, `!ruby/object`) and no `!include`-style extension unless the consuming tool documents it | Mandatory | Security, Portability | Unsafe tags allow code execution in some loaders |
 | 6 | No secret is written in the file: no password, token, key or private connection string; a secret is referenced by name and supplied by the consuming tool | Mandatory | Security | |
-| 7 | Embedded program text (shell, Python, SQL, `jq`, and so on) in a value is at most five lines; a longer one is moved to a file of its own, in its own language, and the YAML calls it | Mandatory | Maintainability, Reliability | Only a separate file can be linted, formatted and unit tested; rule shared with [QC-WF-001] |
+| 7 | Embedded program text (shell, Python, SQL, `jq`, and so on) in a value is at most five lines; a longer one is moved to a file of its own, in its own language, and the YAML calls it | Mandatory | Maintainability, Reliability | Only a separate file can be linted, formatted and unit tested. This is the one definition of the limit; criterion 20 of [QC-WF-001] cites it |
 | 8 | A block of keys or values repeated in the file or across files is defined once (an anchor, a template, an include or a reusable unit the consumer supports) | Mandatory | Maintainability | Modularity, Reusability. Rule: `coding-conventions` skill, “State each piece of knowledge once” |
 | 9 | Anchors, aliases and merge keys (`&`, `*`, `<<`) are used only where the consuming tool is known to support them | Mandatory | Portability, Compatibility | A tool that does not expand them reads the literal text |
 | 10 | The file validates against the schema of the consuming tool where one exists, and the schema or tool version is stated | Optional | Reliability, Compatibility | |
 | 11 | A header comment states what the file is for, which tool reads it, and where its decision or design is recorded | Mandatory | Usability, Maintainability | Comments say why, not what |
 | 12 | Key names follow the convention of the consuming tool; one case style is used within the file (kebab-case or snake_case, never mixed) | Mandatory | Maintainability, Usability | |
-| 13 | Multi-line strings use a block scalar (`|` or `>`) and state the chomping indicator (`|-`, `|+`) where the trailing newline matters | Optional | Reliability | |
+| 13 | Multi-line strings use a block scalar (`\|` or `>`) and state the chomping indicator (`\|-`, `\|+`) where the trailing newline matters | Optional | Reliability | |
 | 14 | The file name is lowercase kebab-case with one extension style (`.yml` or `.yaml`) used throughout the repository | Optional | Maintainability | |
 | 15 | A change is exercised by a check that runs without the real target: a parse and schema test, or a dry run of the consuming tool | Optional | Reliability | |
 
@@ -51,6 +52,13 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 - The same block copied into five files, so one fix is applied four times
 - An anchor or merge key the consuming tool does not expand
 - A file with no comment saying which tool reads it
+- A YAML file that no linter has ever run on, or a linter configuration full of unexplained `disable` comments
+- A language-specific or extension tag (`!!python/object`, `!include`) in a file that another tool reads
+- Keys in `camelCase` and `kebab-case` mixed in one file, against the convention of the tool that reads it
+- A file never validated against the schema of the tool that reads it
+- A multi-line value whose trailing newline changes the result and no chomping indicator says which
+- `.yml` and `.yaml` mixed in one repository, or a file name that is not kebab-case
+- A change that is only ever tried on the real target, with no parse, schema or dry-run check before it
 
 ## Traceability Rule
 

@@ -4,13 +4,14 @@
 | Key | Value |
 | --- | --- |
 | ID | QC-ADR-001 |
-| CrossReference | [QC-BC-001], [QC-DCD-001], [QC-ERD-001], [QC-PY-001], [QC-CL-001], [QC-CPP-001], [QC-CS-001] |
+| CrossReference | [QC-BC-001], [QC-DCD-001], [QC-ERD-001], [QC-PY-001], [QC-CL-001], [QC-CPP-001], [QC-CS-001], [QC-YML-001] |
 | DomainLanguages | IT Professional English |
 
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-01 | Accepted | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
+| 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Cited QC-YML-001 as a forward checklist (RC-077) | pending |
 
 ---
 
@@ -49,7 +50,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 ## Traceability Rule
 
 - Backward: Business Case checklist ([QC-BC-001]) for the objectives and constraints that force the decision
-- Forward: Design Class Diagram checklist ([QC-DCD-001]) and Entity Relationship Diagram checklist ([QC-ERD-001]) for the design and data structures the decision shapes, and the language code checklists ([QC-PY-001], [QC-CL-001], [QC-CPP-001], [QC-CS-001]) for the implementation it constrains
+- Forward: Design Class Diagram checklist ([QC-DCD-001]) and Entity Relationship Diagram checklist ([QC-ERD-001]) for the design and data structures the decision shapes, and the language code checklists ([QC-PY-001], [QC-CL-001], [QC-CPP-001], [QC-CS-001]) for the implementation it constrains; the YAML file checklist ([QC-YML-001]) for the configuration files a decision constrains
 
 ---
 
@@ -60,3 +61,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-CL-001]: ../code/qc-programming-c.md
 [QC-CPP-001]: ../code/qc-programming-cpp.md
 [QC-CS-001]: ../code/qc-programming-csharp.md
+[QC-YML-001]: ../code/qc-yaml.md

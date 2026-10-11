@@ -10,6 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-11 | Proposed | Jens Tirsvad Nielsen | — | Initial version: criteria for a workflow file under `.gitea/workflows/` or `.github/workflows/` | [4af4688] |
+| 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Review conditions (RC-078): corrected the portability note of criterion 22 and the note of criterion 2, criterion 20 cites criterion 7 of QC-YML-001, one Common Defects line per criterion | pending |
 
 ---
 
@@ -28,7 +29,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | # | Criterion | Level | ISO/IEC 25010 Characteristic(s) | Notes |
 | --- | --- | --- | --- | --- |
 | 1 | The file meets the YAML checklist ([QC-YML-001]) | Mandatory | Maintainability, Reliability | |
-| 2 | The file is in `.gitea/workflows/` or `.github/workflows/` with the extension `.yml` or `.yaml`, and the same workflow does not exist in both directories | Mandatory | Reliability, Compatibility | A host may read only one of the two directories; a copy drifts |
+| 2 | The file is in `.gitea/workflows/` or `.github/workflows/` with the extension `.yml` or `.yaml`, and the same workflow does not exist in both directories | Mandatory | Reliability, Compatibility | Which directory a host reads, and whether it reads both, is host behaviour: record it for the instance (criterion 22); a copy of the same workflow drifts |
 | 3 | The file declares `name`, `on` and `jobs`; `on` lists explicit events and, where it matters, `branches` or `paths` | Mandatory | Functional Suitability | |
 | 4 | A header comment states the purpose, the triggers, the inputs, the secrets it needs, what it changes outside the repository, and the decision or milestone it implements | Mandatory | Usability, Maintainability | |
 | 5 | Every job and step has a descriptive `name`, unique within its job | Mandatory | Usability, Maintainability | The default name is the first line of the command |
@@ -61,9 +62,9 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 
 | # | Criterion | Level | ISO/IEC 25010 Characteristic(s) | Notes |
 | --- | --- | --- | --- | --- |
-| 20 | A `run:` block is at most five lines; a longer script is a file (`tools/`, or a shared repository fetched at a pinned ref) that the step calls with one command, and the workflow passes its settings through `env:` | Mandatory | Maintainability, Reliability | A script file can be linted, formatted and tested; one inside YAML cannot. The script meets its language checklist |
+| 20 | A `run:` block is at most five lines; a longer script is a file (`tools/`, or a shared repository fetched at a pinned ref) that the step calls with one command, and the workflow passes its settings through `env:` | Mandatory | Maintainability, Reliability | The limit is defined once, in criterion 7 of [QC-YML-001], which this criterion cites. A script file can be linted, formatted and tested; one inside YAML cannot. The script meets its language checklist |
 | 21 | Logic used by more than one workflow or repository is a reusable workflow (`workflow_call`) or a composite action; each input has a `description`, a `type` and a `default` where one is sensible | Mandatory | Maintainability | Modularity, Reusability. Rule: `coding-conventions` skill, “State each piece of knowledge once” |
-| 22 | Every workflow feature used is verified on the instance that runs it, and the host and version are recorded; a feature the target hosts differ on is noted in the header | Mandatory | Portability, Compatibility | State the Gitea version; `gitea.*` and `github.*` contexts are both read, so the workflow stays portable if only one is used consistently |
+| 22 | Every workflow feature used is verified on the instance that runs it, and the host and version are recorded; a feature the target hosts differ on is noted in the header | Mandatory | Portability, Compatibility | State the Gitea version. `github.*` contexts exist on both hosts; `gitea.*` exists only on Gitea, so a workflow that uses it does not run on GitHub Actions: say so in the header |
 | 23 | A reusable workflow states, in its header, how a caller pins it and the script it fetches, so the workflow and its script are the same release | Optional | Reliability, Maintainability | |
 | 24 | A static test of the repository's workflows exists and runs on every pull request: valid YAML, required keys, explicit permissions and runner, no inline script above the limit | Optional | Reliability | |
 
@@ -81,6 +82,18 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 - The same workflow copied into several repositories instead of called as a reusable workflow
 - A feature that works on one host but was never tried on the instance that runs it
 - Steps named `Run a command` or left unnamed
+- A workflow that breaks the YAML checklist: a duplicate key, a tab, an unquoted version read as a number
+- The same workflow in both `.gitea/workflows/` and `.github/workflows/`, or in a directory the host does not read
+- A file with no `name`, no `on` or no `jobs`, or an `on` that lists no event
+- No header comment: nobody can tell what starts the workflow, which secrets it needs or what it changes
+- A workflow nobody linted: a misspelled key that the host ignores without saying so
+- A workflow that runs on every push for a change that does not concern it
+- A tool installed with no version (`pip install ruff`), so today's run differs from next month's
+- A personal token used where the built-in token of the run would do
+- A dependency install repeated in full on every run with no cache
+- A failing step that prints only `exit code 1`, so the log names no tool, file or reason
+- A reusable workflow whose caller pins the workflow but not the script it fetches
+- No test of the repository's workflows, so a broken file is found by a failed run
 
 ## Traceability Rule
 
