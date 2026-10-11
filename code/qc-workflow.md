@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Review conditions (RC-078): corrected the portability note of criterion 22 and the note of criterion 2, criterion 20 cites criterion 7 of QC-YML-001, one Common Defects line per criterion | [140bc3c] |
-| 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Criterion 20 cites criterion 7 of QC-YML-001 and the coding-conventions reference instead of stating the limit (RC-078 action item) | pending |
+| 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Criterion 20 cites criterion 7 of QC-YML-001 and the coding-conventions reference instead of stating the limit (RC-078 action item) | [a7db402] |
 
 ---
 
@@ -107,3 +107,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-PY-001]: ./qc-programming-python.md
 [QC-ADR-001]: ../artifacts/qc-adr.md
 [140bc3c]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/140bc3c12df74238e332ff149243ef3e6255e208
+[a7db402]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/a7db402192c1eb8704258002d5e3451df8774214
