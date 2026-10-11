@@ -11,7 +11,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-01 | Accepted | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
-| 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Cited QC-YML-001 as a forward checklist (RC-077) | pending |
+| 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Cited QC-YML-001 as a forward checklist (RC-077) | [140bc3c] |
 
 ---
 
@@ -62,3 +62,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-CPP-001]: ../code/qc-programming-cpp.md
 [QC-CS-001]: ../code/qc-programming-csharp.md
 [QC-YML-001]: ../code/qc-yaml.md
+[140bc3c]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/140bc3c12df74238e332ff149243ef3e6255e208

@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-11 | Proposed | Jens Tirsvad Nielsen | — | Initial version: criteria for any `.yml` or `.yaml` file (configuration, CI, data) | [4af4688] |
-| 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Review conditions (RC-077): escaped the pipes in criterion 13, one Common Defects line per criterion, criterion 7 is the single definition of the five-line limit | pending |
+| 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Review conditions (RC-077): escaped the pipes in criterion 13, one Common Defects line per criterion, criterion 7 is the single definition of the five-line limit | [140bc3c] |
 
 ---
 
@@ -70,3 +70,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-WF-001]: ./qc-workflow.md
 [QC-ADR-001]: ../artifacts/qc-adr.md
 [4af4688]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/4af4688c52dc2aef15cd69de91952b66d283dfca
+[140bc3c]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/140bc3c12df74238e332ff149243ef3e6255e208
