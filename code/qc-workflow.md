@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Criterion 20 cites criterion 7 of QC-YML-001 and the coding-conventions reference instead of stating the limit (RC-078 action item) | [a7db402] |
-| 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Criterion 2 records the instance check: Gitea Actions ran .gitea/workflows/ and ignored .github/workflows/ when both existed (RC-078 action item) | pending |
+| 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Criterion 2 records the instance check: Gitea Actions ran .gitea/workflows/ and ignored .github/workflows/ when both existed (RC-078 action item) | [74d49da] |
 
 ---
 
@@ -107,3 +107,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-PY-001]: ./qc-programming-python.md
 [QC-ADR-001]: ../artifacts/qc-adr.md
 [a7db402]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/a7db402192c1eb8704258002d5e3451df8774214
+[74d49da]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/74d49dae05c5a34c114bf17646680174f0bf95e6
