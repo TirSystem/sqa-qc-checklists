@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Review conditions (RC-077): escaped the pipes in criterion 13, one Common Defects line per criterion, criterion 7 is the single definition of the five-line limit | [140bc3c] |
-| 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Criterion 7 cites the coding-conventions reference for the five-line limit (RC-077 action item) | [a7db402] |
+| 2026-10-11 | Deprecated | Jens Tirsvad Nielsen | S07 | Criterion 7 cites the coding-conventions reference for the five-line limit (RC-077 action item) | [a7db402] |
+| 2026-10-11 | Accepted | Jens Tirsvad Nielsen | S02 | Accepted by S02 on 2026-10-11 (confirmed in chat, relayed by the author), through the pull request that merges this row; the first review is confirmed by S07 and its conditions are closed; no criterion changes | pending |
 
 ---
 
@@ -69,5 +69,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 
 [QC-WF-001]: ./qc-workflow.md
 [QC-ADR-001]: ../artifacts/qc-adr.md
-[140bc3c]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/140bc3c12df74238e332ff149243ef3e6255e208
 [a7db402]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/a7db402192c1eb8704258002d5e3451df8774214
