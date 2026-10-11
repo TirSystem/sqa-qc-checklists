@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-11 | Proposed | Jens Tirsvad Nielsen | — | Initial version: criteria for a workflow file under `.gitea/workflows/` or `.github/workflows/` | pending |
+| 2026-10-11 | Proposed | Jens Tirsvad Nielsen | — | Initial version: criteria for a workflow file under `.gitea/workflows/` or `.github/workflows/` | [4af4688] |
 
 ---
 
@@ -93,3 +93,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-SH-001]: ./qc-programming-shell.md
 [QC-PY-001]: ./qc-programming-python.md
 [QC-ADR-001]: ../artifacts/qc-adr.md
+[4af4688]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/4af4688c52dc2aef15cd69de91952b66d283dfca
