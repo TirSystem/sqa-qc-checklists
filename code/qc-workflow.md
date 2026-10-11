@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-11 | Deprecated | Jens Tirsvad Nielsen | S07 | Criterion 2 records the instance check: Gitea Actions ran .gitea/workflows/ and ignored .github/workflows/ when both existed (RC-078 action item) | [74d49da] |
-| 2026-10-11 | Accepted | Jens Tirsvad Nielsen | S02 | Accepted by S02 on 2026-10-11 (confirmed in chat, relayed by the author), through the pull request that merges this row; the first review is confirmed by S07 and its conditions are closed; no criterion changes | pending |
+| 2026-10-11 | Accepted | Jens Tirsvad Nielsen | S02 | Accepted by S02 on 2026-10-11 (confirmed in chat, relayed by the author), through the pull request that merges this row; the first review is confirmed by S07 and its conditions are closed; no criterion changes | [a686ac1] |
 
 ---
 
@@ -107,3 +107,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-PY-001]: ./qc-programming-python.md
 [QC-ADR-001]: ../artifacts/qc-adr.md
 [74d49da]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/74d49dae05c5a34c114bf17646680174f0bf95e6
+[a686ac1]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/a686ac140157cf6c607bef8d96959cd4ce8d0468
