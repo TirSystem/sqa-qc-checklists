@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-11 | Proposed | Jens Tirsvad Nielsen | — | Initial version: criteria for any `.yml` or `.yaml` file (configuration, CI, data) | [4af4688] |
 | 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Review conditions (RC-077): escaped the pipes in criterion 13, one Common Defects line per criterion, criterion 7 is the single definition of the five-line limit | [140bc3c] |
+| 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Criterion 7 cites the coding-conventions reference for the five-line limit (RC-077 action item) | pending |
 
 ---
 
@@ -32,7 +32,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 4 | A scalar that YAML would coerce to another type is quoted: `yes`, `no`, `on`, `off`, `null`, `~`, numbers with a leading zero, versions such as `1.10`, and values that contain `: ` or ` #` | Mandatory | Reliability | The `on` and `1.10` cases are the usual ones; quote versions and country codes |
 | 5 | Only safe, plain types are used: no language-specific tags (`!!python/object`, `!ruby/object`) and no `!include`-style extension unless the consuming tool documents it | Mandatory | Security, Portability | Unsafe tags allow code execution in some loaders |
 | 6 | No secret is written in the file: no password, token, key or private connection string; a secret is referenced by name and supplied by the consuming tool | Mandatory | Security | |
-| 7 | Embedded program text (shell, Python, SQL, `jq`, and so on) in a value is at most five lines; a longer one is moved to a file of its own, in its own language, and the YAML calls it | Mandatory | Maintainability, Reliability | Only a separate file can be linted, formatted and unit tested. This is the one definition of the limit; criterion 20 of [QC-WF-001] cites it |
+| 7 | Embedded program text (shell, Python, SQL, `jq`, and so on) in a value is at most five lines; a longer one is moved to a file of its own, in its own language, and the YAML calls it | Mandatory | Maintainability, Reliability | Only a separate file can be linted, formatted and unit tested. The limit is defined in the `coding-conventions` skill (`references/yaml.md`, language rules, "Embedded program text"); this criterion is its check, and criterion 20 of [QC-WF-001] applies it to a workflow |
 | 8 | A block of keys or values repeated in the file or across files is defined once (an anchor, a template, an include or a reusable unit the consumer supports) | Mandatory | Maintainability | Modularity, Reusability. Rule: `coding-conventions` skill, “State each piece of knowledge once” |
 | 9 | Anchors, aliases and merge keys (`&`, `*`, `<<`) are used only where the consuming tool is known to support them | Mandatory | Portability, Compatibility | A tool that does not expand them reads the literal text |
 | 10 | The file validates against the schema of the consuming tool where one exists, and the schema or tool version is stated | Optional | Reliability, Compatibility | |
@@ -69,5 +69,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 
 [QC-WF-001]: ./qc-workflow.md
 [QC-ADR-001]: ../artifacts/qc-adr.md
-[4af4688]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/4af4688c52dc2aef15cd69de91952b66d283dfca
 [140bc3c]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/140bc3c12df74238e332ff149243ef3e6255e208
