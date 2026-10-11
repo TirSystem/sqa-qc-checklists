@@ -54,9 +54,9 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-DM-001]: ./qc-domain-model.md
 [QC-SD-001]: ./qc-sequence-diagram.md
 [QC-ERD-001]: ./qc-erd.md
-[QC-PY-001]: ./qc-programming-python.md
-[QC-CL-001]: ./qc-programming-c.md
-[QC-CPP-001]: ./qc-programming-cpp.md
-[QC-CS-001]: ./qc-programming-csharp.md
+[QC-PY-001]: ../code/qc-programming-python.md
+[QC-CL-001]: ../code/qc-programming-c.md
+[QC-CPP-001]: ../code/qc-programming-cpp.md
+[QC-CS-001]: ../code/qc-programming-csharp.md
 [304ec77]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/304ec7751bd39ff6d54862c2cd10958ef90123ff
 [b5e5613]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/b5e5613a384527a18cd40594fc24cac4bdd11a31
