@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-11 | Proposed | Jens Tirsvad Nielsen | — | Initial version: criteria for a workflow file under `.gitea/workflows/` or `.github/workflows/` | [4af4688] |
 | 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Review conditions (RC-078): corrected the portability note of criterion 22 and the note of criterion 2, criterion 20 cites criterion 7 of QC-YML-001, one Common Defects line per criterion | [140bc3c] |
+| 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Criterion 20 cites criterion 7 of QC-YML-001 and the coding-conventions reference instead of stating the limit (RC-078 action item) | [a7db402] |
 
 ---
 
@@ -62,7 +62,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 
 | # | Criterion | Level | ISO/IEC 25010 Characteristic(s) | Notes |
 | --- | --- | --- | --- | --- |
-| 20 | A `run:` block is at most five lines; a longer script is a file (`tools/`, or a shared repository fetched at a pinned ref) that the step calls with one command, and the workflow passes its settings through `env:` | Mandatory | Maintainability, Reliability | The limit is defined once, in criterion 7 of [QC-YML-001], which this criterion cites. A script file can be linted, formatted and tested; one inside YAML cannot. The script meets its language checklist |
+| 20 | A `run:` block is within the limit on embedded program text of criterion 7 of [QC-YML-001]; a longer script is a file (`tools/`, or a shared repository fetched at a pinned ref) that the step calls with one command, and the workflow passes its settings through `env:` | Mandatory | Maintainability, Reliability | The limit is defined in the `coding-conventions` skill (`references/yaml.md`) and checked by criterion 7 of [QC-YML-001]; this criterion applies it to workflows and does not restate it. A script file can be linted, formatted and tested; one inside YAML cannot. The script meets its language checklist |
 | 21 | Logic used by more than one workflow or repository is a reusable workflow (`workflow_call`) or a composite action; each input has a `description`, a `type` and a `default` where one is sensible | Mandatory | Maintainability | Modularity, Reusability. Rule: `coding-conventions` skill, “State each piece of knowledge once” |
 | 22 | Every workflow feature used is verified on the instance that runs it, and the host and version are recorded; a feature the target hosts differ on is noted in the header | Mandatory | Portability, Compatibility | State the Gitea version. `github.*` contexts exist on both hosts; `gitea.*` exists only on Gitea, so a workflow that uses it does not run on GitHub Actions: say so in the header |
 | 23 | A reusable workflow states, in its header, how a caller pins it and the script it fetches, so the workflow and its script are the same release | Optional | Reliability, Maintainability | |
@@ -106,5 +106,5 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-SH-001]: ./qc-programming-shell.md
 [QC-PY-001]: ./qc-programming-python.md
 [QC-ADR-001]: ../artifacts/qc-adr.md
-[4af4688]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/4af4688c52dc2aef15cd69de91952b66d283dfca
 [140bc3c]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/140bc3c12df74238e332ff149243ef3e6255e208
+[a7db402]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/a7db402192c1eb8704258002d5e3451df8774214
