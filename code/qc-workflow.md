@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Review conditions (RC-078): corrected the portability note of criterion 22 and the note of criterion 2, criterion 20 cites criterion 7 of QC-YML-001, one Common Defects line per criterion | [140bc3c] |
 | 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Criterion 20 cites criterion 7 of QC-YML-001 and the coding-conventions reference instead of stating the limit (RC-078 action item) | [a7db402] |
+| 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Criterion 2 records the instance check: Gitea Actions ran .gitea/workflows/ and ignored .github/workflows/ when both existed (RC-078 action item) | [74d49da] |
 
 ---
 
@@ -29,7 +29,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | # | Criterion | Level | ISO/IEC 25010 Characteristic(s) | Notes |
 | --- | --- | --- | --- | --- |
 | 1 | The file meets the YAML checklist ([QC-YML-001]) | Mandatory | Maintainability, Reliability | |
-| 2 | The file is in `.gitea/workflows/` or `.github/workflows/` with the extension `.yml` or `.yaml`, and the same workflow does not exist in both directories | Mandatory | Reliability, Compatibility | Which directory a host reads, and whether it reads both, is host behaviour: record it for the instance (criterion 22); a copy of the same workflow drifts |
+| 2 | The file is in `.gitea/workflows/` or `.github/workflows/` with the extension `.yml` or `.yaml`, and the same workflow does not exist in both directories | Mandatory | Reliability, Compatibility | Which directory a host reads is host behaviour: record it for the instance (criterion 22). Gitea Actions was observed to run `.gitea/workflows/` and ignore `.github/workflows/` when both exist (Gitea 1.27.3, push event); confirm it on your version. A copy in the ignored directory does nothing, and a fix made only there is lost |
 | 3 | The file declares `name`, `on` and `jobs`; `on` lists explicit events and, where it matters, `branches` or `paths` | Mandatory | Functional Suitability | |
 | 4 | A header comment states the purpose, the triggers, the inputs, the secrets it needs, what it changes outside the repository, and the decision or milestone it implements | Mandatory | Usability, Maintainability | |
 | 5 | Every job and step has a descriptive `name`, unique within its job | Mandatory | Usability, Maintainability | The default name is the first line of the command |
@@ -83,7 +83,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 - A feature that works on one host but was never tried on the instance that runs it
 - Steps named `Run a command` or left unnamed
 - A workflow that breaks the YAML checklist: a duplicate key, a tab, an unquoted version read as a number
-- The same workflow in both `.gitea/workflows/` and `.github/workflows/`, or in a directory the host does not read
+- The same workflow in both `.gitea/workflows/` and `.github/workflows/`, or only in the one the host ignores, so a fix to it changes nothing
 - A file with no `name`, no `on` or no `jobs`, or an `on` that lists no event
 - No header comment: nobody can tell what starts the workflow, which secrets it needs or what it changes
 - A workflow nobody linted: a misspelled key that the host ignores without saying so
@@ -106,5 +106,5 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-SH-001]: ./qc-programming-shell.md
 [QC-PY-001]: ./qc-programming-python.md
 [QC-ADR-001]: ../artifacts/qc-adr.md
-[140bc3c]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/140bc3c12df74238e332ff149243ef3e6255e208
 [a7db402]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/a7db402192c1eb8704258002d5e3451df8774214
+[74d49da]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/74d49dae05c5a34c114bf17646680174f0bf95e6
