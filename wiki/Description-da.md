@@ -4,7 +4,7 @@
 
 ## Hvad en tjekliste indeholder
 
-Hver `qc-<type>.md` har samme form:
+Hver `qc-<type>.md` (i `artifacts/` for dokumenter, i `code/` for kildekode, scripts og automatisering) har samme form:
 
 | Afsnit | Indhold |
 | --- | --- |
@@ -53,11 +53,17 @@ Postformatet (en `RC-*`-reviewpost) er defineret af
 [frameworket](https://git.tirsystem.com/TirSystem/sqa-qc-framework); uden for
 frameworket duer enhver tabel med de samme kolonner.
 
-## Tjeklister for kildekode
+## Tjeklister for kildekode, YAML og workflows
 
 `qc-programming-*`-tjeklisterne forudsætter, at dit team har skrevet sine
 kodekonventioner ned for sproget. De kontrollerer, at koden **følger dem**; de
 pålægger ikke en egen stil.
+
+`qc-yaml` (`QC-YML-001`) gælder for enhver YAML-fil og `qc-workflow` (`QC-WF-001`) for en
+Gitea Actions- eller GitHub Actions-workflow; en workflow reviewes mod begge. De
+kontrollerer bl.a., at ingen hemmelighed står i filen, at hvert job har mindst mulige
+rettigheder, en timeout og fastlåste actions, og at et script indlejret i YAML højst er
+fem linjer (et længere er en fil, der kan lintes og testes).
 
 ## Licens
 

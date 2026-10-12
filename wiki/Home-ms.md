@@ -15,13 +15,16 @@ dengan ciri kualiti ISO/IEC 25010:2023. Dilesenkan
 
 ## Senarai semak
 
+Senarai semak dokumen berada dalam `artifacts/`; senarai semak untuk kod sumber, skrip dan automasi berada dalam `code/`.
+
 | Kumpulan | Fail |
 | --- | --- |
 | Perniagaan dan analisis | `qc-business-case`, `qc-stakeholder-analysis`, `qc-kpi`, `qc-business-model-canvas`, `qc-bpmn`, `qc-governance`, `qc-milestones-gateways` |
 | Keperluan | `qc-use-case-diagram`, `qc-use-case`, `qc-user-story` |
 | Reka bentuk | `qc-domain-model`, `qc-ssd`, `qc-operation-contract`, `qc-sequence-diagram`, `qc-dcd`, `qc-erd`, `qc-adr` |
 | Perbendaharaan kata, bahasa, domain | `qc-dictionary`, `qc-language-domain` |
-| Kod sumber | `qc-programming-python`, `-c`, `-cpp`, `-csharp`, `-shell` |
+| Kod sumber (`code/`) | `qc-programming-python`, `-c`, `-cpp`, `-csharp`, `-shell` |
+| YAML dan aliran kerja CI (`code/`) | `qc-yaml`, `qc-workflow` |
 
 Senarai semak ini ialah pintu kualiti
 [SQA and QC Framework](https://git.tirsystem.com/TirSystem/sqa-qc-framework),

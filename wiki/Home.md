@@ -15,13 +15,16 @@ ISO/IEC 25010:2023 quality characteristic. Licensed
 
 ## Checklists
 
+The checklists of documents are in `artifacts/`; those of source code, scripts and automation are in `code/`.
+
 | Group | Files |
 | --- | --- |
 | Business and analysis | `qc-business-case`, `qc-stakeholder-analysis`, `qc-kpi`, `qc-business-model-canvas`, `qc-bpmn`, `qc-governance`, `qc-milestones-gateways` |
 | Requirements | `qc-use-case-diagram`, `qc-use-case`, `qc-user-story` |
 | Design | `qc-domain-model`, `qc-ssd`, `qc-operation-contract`, `qc-sequence-diagram`, `qc-dcd`, `qc-erd`, `qc-adr` |
 | Vocabulary, language, domain | `qc-dictionary`, `qc-language-domain` |
-| Source code | `qc-programming-python`, `-c`, `-cpp`, `-csharp`, `-shell` |
+| Source code (`code/`) | `qc-programming-python`, `-c`, `-cpp`, `-csharp`, `-shell` |
+| YAML and CI workflows (`code/`) | `qc-yaml`, `qc-workflow` |
 
 These checklists are the quality gate of the
 [SQA and QC Framework](https://git.tirsystem.com/TirSystem/sqa-qc-framework),

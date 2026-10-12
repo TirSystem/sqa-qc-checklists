@@ -4,7 +4,7 @@
 
 ## What a checklist contains
 
-Every `qc-<type>.md` has the same shape:
+Every `qc-<type>.md` (in `artifacts/` for documents, in `code/` for source code, scripts and automation) has the same shape:
 
 | Section | Content |
 | --- | --- |
@@ -53,11 +53,17 @@ The record format (an `RC-*` review record) is defined by the
 [framework](https://git.tirsystem.com/TirSystem/sqa-qc-framework); outside the
 framework any table with the same columns works.
 
-## Source-code checklists
+## Source-code, YAML and workflow checklists
 
 The `qc-programming-*` checklists assume your team has written down its coding
 conventions for the language. They check that code **follows them**; they do
 not impose a style of their own.
+
+`qc-yaml` (`QC-YML-001`) applies to any YAML file and `qc-workflow` (`QC-WF-001`) to a Gitea
+Actions or GitHub Actions workflow; a workflow is reviewed against both. They check, among
+other things, that no secret is written in the file, that every job has least-privilege
+permissions, a timeout and pinned actions, and that a script embedded in YAML is at most
+five lines (a longer one is a file that can be linted and tested).
 
 ## Licence
 
