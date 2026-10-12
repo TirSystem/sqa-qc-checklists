@@ -15,13 +15,16 @@ ISO/IEC 25010:2023-kvalitetsegenskab. Licens:
 
 ## Tjeklister
 
+Dokumenternes tjeklister ligger i `artifacts/`; tjeklisterne for kildekode, scripts og automatisering ligger i `code/`.
+
 | Gruppe | Filer |
 | --- | --- |
 | Forretning og analyse | `qc-business-case`, `qc-stakeholder-analysis`, `qc-kpi`, `qc-business-model-canvas`, `qc-bpmn`, `qc-governance`, `qc-milestones-gateways` |
 | Krav | `qc-use-case-diagram`, `qc-use-case`, `qc-user-story` |
 | Design | `qc-domain-model`, `qc-ssd`, `qc-operation-contract`, `qc-sequence-diagram`, `qc-dcd`, `qc-erd`, `qc-adr` |
 | Ordforråd, sprog, domæne | `qc-dictionary`, `qc-language-domain` |
-| Kildekode | `qc-programming-python`, `-c`, `-cpp`, `-csharp`, `-shell` |
+| Kildekode (`code/`) | `qc-programming-python`, `-c`, `-cpp`, `-csharp`, `-shell` |
+| YAML og CI-workflows (`code/`) | `qc-yaml`, `qc-workflow` |
 
 Tjeklisterne er kvalitetsporten i
 [SQA and QC Framework](https://git.tirsystem.com/TirSystem/sqa-qc-framework),

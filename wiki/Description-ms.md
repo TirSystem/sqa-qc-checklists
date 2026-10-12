@@ -4,7 +4,7 @@
 
 ## Kandungan senarai semak
 
-Setiap `qc-<jenis>.md` mempunyai bentuk yang sama:
+Setiap `qc-<jenis>.md` (dalam `artifacts/` untuk dokumen, dalam `code/` untuk kod sumber, skrip dan automasi) mempunyai bentuk yang sama:
 
 | Bahagian | Kandungan |
 | --- | --- |
@@ -54,11 +54,18 @@ Format rekod (rekod semakan `RC-*`) ditakrifkan oleh
 [rangka kerja](https://git.tirsystem.com/TirSystem/sqa-qc-framework); di luar
 rangka kerja, mana-mana jadual dengan lajur yang sama boleh digunakan.
 
-## Senarai semak kod sumber
+## Senarai semak kod sumber, YAML dan aliran kerja
 
 Senarai semak `qc-programming-*` menganggap pasukan anda telah menulis
 konvensyen pengekodan untuk bahasa itu. Ia menyemak kod **mengikutinya**; ia
 tidak memaksakan gaya sendiri.
+
+`qc-yaml` (`QC-YML-001`) terpakai pada mana-mana fail YAML dan `qc-workflow` (`QC-WF-001`)
+pada aliran kerja Gitea Actions atau GitHub Actions; aliran kerja disemak terhadap
+kedua-duanya. Antara lain, ia menyemak bahawa tiada rahsia ditulis dalam fail, setiap job
+mempunyai kebenaran paling minimum, had masa dan actions yang dikunci, dan skrip yang
+tertanam dalam YAML paling banyak lima baris (yang lebih panjang ialah fail yang boleh
+dilint dan diuji).
 
 ## Lesen
 
