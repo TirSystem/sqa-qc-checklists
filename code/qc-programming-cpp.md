@@ -10,8 +10,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-09 | Accepted | Jens Tirsvad Nielsen | S02 | Accepted by the author as stand-in for S02 (Coding Standards Governance), through the pull request that merges this row; the delta re-review of the new criteria is a draft confirmed by the author as stand-in, not independently | [b5e5613] |
-| 2026-10-14 | Proposed | Jens Tirsvad Nielsen | S02 | Added criteria 17 and 18 (layer folders; file and folder names) | pending |
+| 2026-10-09 | Deprecated | Jens Tirsvad Nielsen | S02 | Accepted by the author as stand-in for S02 (Coding Standards Governance), through the pull request that merges this row; the delta re-review of the new criteria is a draft confirmed by the author as stand-in, not independently | [b5e5613] |
+| 2026-10-14 | Accepted | Jens Tirsvad Nielsen | S02 | Added criteria 17 and 18 (layer folders; file and folder names); accepted by the author as stand-in for S02 (Coding Standards Governance), through the pull request that merges this row; not independent of the author | [f65bb81] |
 
 ---
 
@@ -69,3 +69,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-DCD-001]: ../artifacts/qc-dcd.md
 [QC-ADR-001]: ../artifacts/qc-adr.md
 [b5e5613]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/b5e5613a384527a18cd40594fc24cac4bdd11a31
+[f65bb81]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/f65bb81af825478f73e0f65463c69c32fe8b45c9

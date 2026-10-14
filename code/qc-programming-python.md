@@ -10,8 +10,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Cited QC-WF-001 as a backward checklist (RC-078) | [140bc3c] |
-| 2026-10-14 | Proposed | Jens Tirsvad Nielsen | S02 | Added criteria 17 and 18 (layer folders; file and folder names) | pending |
+| 2026-10-11 | Deprecated | Jens Tirsvad Nielsen | S07 | Cited QC-WF-001 as a backward checklist (RC-078) | [140bc3c] |
+| 2026-10-14 | Accepted | Jens Tirsvad Nielsen | S02 | Added criteria 17 and 18 (layer folders; file and folder names); accepted by the author as stand-in for S02 (Coding Standards Governance), through the pull request that merges this row; not independent of the author | [f65bb81] |
 
 ---
 
@@ -70,3 +70,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-ADR-001]: ../artifacts/qc-adr.md
 [QC-WF-001]: ./qc-workflow.md
 [140bc3c]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/140bc3c12df74238e332ff149243ef3e6255e208
+[f65bb81]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/f65bb81af825478f73e0f65463c69c32fe8b45c9
