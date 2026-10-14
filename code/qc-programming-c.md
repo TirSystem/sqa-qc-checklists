@@ -10,8 +10,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-09 | Deprecated | Jens Tirsvad Nielsen | S02 | Added criteria 14 to 15 (DRY and dependency rule) | [304ec77] |
 | 2026-10-09 | Accepted | Jens Tirsvad Nielsen | S02 | Accepted by the author as stand-in for S02 (Coding Standards Governance), through the pull request that merges this row; the delta re-review of the new criteria is a draft confirmed by the author as stand-in, not independently | [b5e5613] |
+| 2026-10-14 | Proposed | Jens Tirsvad Nielsen | S02 | Added criteria 16 and 17 (layer folders; file and folder names) | pending |
 
 ---
 
@@ -40,6 +40,8 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 13 | Modules and functions trace to the Design Class Diagram or design artifact they implement | Mandatory | Functional Suitability, Maintainability | |
 | 14 | Each piece of knowledge (a business rule, constant, format, validation or query) is defined in one place; code is merged only where it expresses the same knowledge, not where it merely looks alike | Mandatory | Maintainability | Modularity, Reusability. Rule: `coding-conventions` skill, “State each piece of knowledge once” |
 | 15 | Includes point inward: business-rule modules include no I/O, platform or UI headers, the include graph has no cycles, and a module has one responsibility (rules are not mixed with I/O) | Mandatory | Maintainability, Portability | Modularity, Portability. Rule: `coding-conventions` skill, “Dependencies point inward” |
+| 16 | Source is laid out in the layers and folders of the clean architecture folder structure (`domain/`, `application/`, `infrastructure/` and `presentation/` directories under `src/`, and `unit`, `integration` and `e2e` under `tests/`), in `snake_case`, and includes between the layers point inward | Mandatory | Maintainability, Portability | Structure: see the `clean-architecture` skill, "Folder structure". A merged layer is accepted when an ADR says why; `Domain` is never merged |
+| 17 | File and folder names are English, contain no space and no character outside letters, digits, `-`, `_` and `.`, and follow the casing of the language for files | Mandatory | Usability, Maintainability, Portability | Names: rule 16 of `coding-conventions`; well-known names (`README.md`, `LICENSE`) and wiki page names are exceptions |
 
 ## Common Defects
 
@@ -53,6 +55,8 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 - The same rule, constant or table written in two modules
 - A business-rule module that includes a platform, I/O or UI header, or modules that include each other
 - A module that mixes business rules with file or device access
+- Source files in one flat folder, or a layer that exists only by a naming habit and not as a project or directory
+- File or folder names with a space, in a language other than English, or in another language's casing
 
 ## Traceability Rule
 
@@ -63,5 +67,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 
 [QC-DCD-001]: ../artifacts/qc-dcd.md
 [QC-ADR-001]: ../artifacts/qc-adr.md
-[304ec77]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/304ec7751bd39ff6d54862c2cd10958ef90123ff
 [b5e5613]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/b5e5613a384527a18cd40594fc24cac4bdd11a31

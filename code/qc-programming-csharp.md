@@ -10,8 +10,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-09 | Deprecated | Jens Tirsvad Nielsen | S02 | Added criteria 14 to 16 (DRY, dependency rule and SOLID) | [304ec77] |
 | 2026-10-09 | Accepted | Jens Tirsvad Nielsen | S02 | Accepted by the author as stand-in for S02 (Coding Standards Governance), through the pull request that merges this row; the delta re-review of the new criteria is a draft confirmed by the author as stand-in, not independently | [b5e5613] |
+| 2026-10-14 | Proposed | Jens Tirsvad Nielsen | S02 | Added criteria 17 and 18 (layer folders; file and folder names) | pending |
 
 ---
 
@@ -41,6 +41,8 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 14 | Each piece of knowledge (a business rule, constant, format, validation or query) is defined in one place; code is merged only where it expresses the same knowledge, not where it merely looks alike | Mandatory | Maintainability | Modularity, Reusability. Rule: `coding-conventions` skill, “State each piece of knowledge once” |
 | 15 | Namespace and project references point inward: business-rule code references no framework, database, UI or delivery-mechanism code, and there are no reference cycles | Mandatory | Maintainability, Portability | Modularity, Portability. Rule: `coding-conventions` skill, “Dependencies point inward” |
 | 16 | SOLID holds: a class has one reason to change; new behaviour is added by extension, not by editing a type test in several places; subtypes honour the contract of their base; interfaces are narrow; high-level code depends on interfaces and receives its implementations by injection | Mandatory | Maintainability | Single responsibility is the most commonly violated. Rule: `coding-conventions` skill, “SOLID” |
+| 17 | Source is laid out in the layers and folders of the clean architecture folder structure (the projects `<App>.Domain`, `<App>.Application`, `<App>.Infrastructure` and `<App>.Presentation` under `src/`, and `unit`, `integration` and `e2e` under `tests/`), in `PascalCase`, and project references between the layers point inward | Mandatory | Maintainability, Portability | Structure: see the `clean-architecture` skill, "Folder structure". A merged layer is accepted when an ADR says why; `Domain` is never merged |
+| 18 | File and folder names are English, contain no space and no character outside letters, digits, `-`, `_` and `.`, and follow the casing of the language for files | Mandatory | Usability, Maintainability, Portability | Names: rule 16 of `coding-conventions`; well-known names (`README.md`, `LICENSE`) and wiki page names are exceptions |
 
 ## Common Defects
 
@@ -54,6 +56,8 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 - The same rule, constant or validation written in two places, or two methods merged because they look alike although they change for different reasons
 - Business-rule code that references the ORM, the web framework or a database driver
 - A class with several unrelated responsibilities, or `is`/`switch` type tests repeated in several places
+- Source files in one flat folder, or a layer that exists only by a naming habit and not as a project or directory
+- File or folder names with a space, in a language other than English, or in another language's casing
 
 ## Traceability Rule
 
@@ -64,5 +68,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 
 [QC-DCD-001]: ../artifacts/qc-dcd.md
 [QC-ADR-001]: ../artifacts/qc-adr.md
-[304ec77]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/304ec7751bd39ff6d54862c2cd10958ef90123ff
 [b5e5613]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/b5e5613a384527a18cd40594fc24cac4bdd11a31
