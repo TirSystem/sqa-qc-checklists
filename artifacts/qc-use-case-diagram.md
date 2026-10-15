@@ -11,7 +11,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-01 | Accepted | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
-| 2026-10-15 | Accepted | Jens Tirsvad Nielsen | S07 | Added criteria 9 and 10 (source story and priority; role matrix for more than one primary actor); accepted by the author as stand-in for S07, through the pull request that merges this row; not independent of the author | pending |
+| 2026-10-15 | Accepted | Jens Tirsvad Nielsen | S07 | Added criteria 9 and 10 (source story and priority; role matrix for more than one primary actor); accepted by the author as stand-in for S07, through the pull request that merges this row; not independent of the author | [b818ee7] |
 
 ---
 
@@ -56,3 +56,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-BC-001]: ./qc-business-case.md
 [QC-US-001]: ./qc-user-story.md
 [QC-UC-001]: ./qc-use-case.md
+[b818ee7]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/b818ee7f007b69282461bc616a48dd5871cedad6

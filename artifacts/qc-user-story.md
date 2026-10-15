@@ -11,7 +11,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-01 | Accepted | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
-| 2026-10-15 | Accepted | Jens Tirsvad Nielsen | S07 | Added criteria 8 and 9 (split into use cases; MoSCoW priority with a reason); accepted by the author as stand-in for S07, through the pull request that merges this row; not independent of the author | pending |
+| 2026-10-15 | Accepted | Jens Tirsvad Nielsen | S07 | Added criteria 8 and 9 (split into use cases; MoSCoW priority with a reason); accepted by the author as stand-in for S07, through the pull request that merges this row; not independent of the author | [b818ee7] |
 
 ---
 
@@ -53,3 +53,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-UCD-001]: ./qc-use-case-diagram.md
 [QC-UC-001]: ./qc-use-case.md
 [QC-BC-001]: ./qc-business-case.md
+[b818ee7]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/b818ee7f007b69282461bc616a48dd5871cedad6
