@@ -11,6 +11,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-01 | Accepted | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
+| 2026-10-15 | Accepted | Jens Tirsvad Nielsen | S07 | Added criteria 8 and 9 (split into use cases; MoSCoW priority with a reason); accepted by the author as stand-in for S07, through the pull request that merges this row; not independent of the author | pending |
 
 ---
 
@@ -31,6 +32,8 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 5 | Story is sized to fit within a single iteration | Optional | Maintainability | |
 | 6 | Story statement avoids technical implementation detail | Optional | Usability, Maintainability | |
 | 7 | Role named in the story matches an actor defined in the Use Case Diagram | Mandatory | Compatibility | |
+| 8 | A story with more than one actor goal is split into use cases, one per actor goal, and each use case names the story it comes from | Optional | Maintainability, Functional Suitability | Candidate stories are proposed, then accepted, merged or dropped by the user |
+| 9 | The story has a priority (MoSCoW: Must, Should, Could, Won't now) with the reason beside it | Optional | Maintainability | The reason cites value, risk or a dependency |
 
 ## Common Defects
 
@@ -38,6 +41,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 - Missing, vague, or unverifiable acceptance criteria
 - Role that does not match any actor defined elsewhere
 - Stories phrased as implementation tasks rather than user-valued outcomes
+- A priority without a reason, or every story marked Must
 
 ## Traceability Rule
 
