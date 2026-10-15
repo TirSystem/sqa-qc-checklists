@@ -11,6 +11,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-01 | Accepted | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
+| 2026-10-15 | Accepted | Jens Tirsvad Nielsen | S07 | Added criteria 9 and 10 (source story and priority; role matrix for more than one primary actor); accepted by the author as stand-in for S07, through the pull request that merges this row; not independent of the author | [b818ee7] |
 
 ---
 
@@ -32,6 +33,8 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 6 | Use case names are verb phrases describing actor goals, not internal system operations | Mandatory | Usability, Maintainability | |
 | 7 | Diagram is free of implementation detail (e.g. UI widgets, database tables) | Optional | Maintainability, Portability | |
 | 8 | Actor and use case naming is consistent with corresponding Use Case and User Story documents | Optional | Compatibility, Maintainability | |
+| 9 | Each use case lists the user story it comes from and its priority (MoSCoW) with a reason | Optional | Maintainability, Functional Suitability | |
+| 10 | When there is more than one primary actor, a role matrix (use case by role) is present and marked as a suggestion for the Product Owner to approve | Optional | Security, Maintainability | The roles come from the actors; actors with the same permissions share a role. The matrix says which use cases a role may perform, not which data it may see |
 
 ## Common Defects
 
@@ -40,6 +43,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 - Missing or ambiguous system boundary
 - Orphan actors with no connected use case
 - Use case names phrased as system functions (e.g. "Validate Input") rather than user goals (e.g. "Place Order")
+- More than one primary actor and no role matrix, or a matrix presented as decided rather than suggested
 
 ## Traceability Rule
 
@@ -52,3 +56,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-BC-001]: ./qc-business-case.md
 [QC-US-001]: ./qc-user-story.md
 [QC-UC-001]: ./qc-use-case.md
+[b818ee7]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/b818ee7f007b69282461bc616a48dd5871cedad6
