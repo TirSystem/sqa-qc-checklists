@@ -12,6 +12,7 @@ ISO/IEC 25010:2023-kvalitetsegenskab. Licens:
 | [Beskrivelse](Description-da) | Forstå hvordan en tjekliste er bygget, ID-skemaet, niveauer og sporbarhed |
 | [Installation](Install-da) | Bruge tjeklisterne alene eller som submodul |
 | [AI-promptskabelon](AI-Prompt-Template-da) | Bede en AI-agent reviewe et dokument eller kode mod en tjekliste |
+| [Appendiks](Appendix-Documentation-da) | Links til alle dokumenter under `artifacts/`, `code/` |
 
 ## Tjeklister
 

@@ -12,6 +12,7 @@ ISO/IEC 25010:2023 quality characteristic. Licensed
 | [Description](Description) | Understand how a checklist is built, the ID scheme, levels and traceability |
 | [Install](Install) | Use the checklists on their own or as a submodule |
 | [AI Prompt Template](AI-Prompt-Template) | Ask an AI agent to review a document or code against a checklist |
+| [Appendix](Appendix-Documentation) | Links to every document under `artifacts/`, `code/` |
 
 ## Checklists
 
