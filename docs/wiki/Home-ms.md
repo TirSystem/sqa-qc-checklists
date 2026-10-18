@@ -12,6 +12,7 @@ dengan ciri kualiti ISO/IEC 25010:2023. Dilesenkan
 | [Huraian](Description-ms) | Memahami cara senarai semak dibina, skema ID, tahap dan kebolehjejakan |
 | [Pemasangan](Install-ms) | Menggunakan senarai semak secara bersendirian atau sebagai submodul |
 | [Templat Prompt AI](AI-Prompt-Template-ms) | Meminta ejen AI menyemak dokumen atau kod terhadap senarai semak |
+| [Lampiran](Appendix-Documentation-ms) | Pautan ke setiap dokumen di bawah `artifacts/`, `code/` |
 
 ## Senarai semak
 
