@@ -10,7 +10,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-18 | Proposed | Jens Tirsvad Nielsen | S02 | Created with the Rust conventions of the `coding-conventions` skill | pending |
+| 2026-10-18 | Proposed | Jens Tirsvad Nielsen | S02 | Created with the Rust conventions of the `coding-conventions` skill | [772e160] |
 
 ---
 
@@ -65,3 +65,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 
 [QC-DCD-001]: ../artifacts/qc-dcd.md
 [QC-ADR-001]: ../artifacts/qc-adr.md
+[772e160]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/772e1604b9f2911fd6780b88ae2425e2e522ec68
