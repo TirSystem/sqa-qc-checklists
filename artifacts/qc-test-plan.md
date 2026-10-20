@@ -10,7 +10,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-20 | Proposed | Jens Tirsvad Nielsen | S02 | Created | pending |
+| 2026-10-20 | Proposed | Jens Tirsvad Nielsen | S02 | Created | [671993f] |
 
 ---
 
@@ -60,3 +60,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-UC-001]: ./qc-use-case.md
 [QC-OC-001]: ./qc-operation-contract.md
 [QC-MIL-001]: ./qc-milestones-gateways.md
+[671993f]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/671993fe2def9f17df72db99ab58bdd26581be00
