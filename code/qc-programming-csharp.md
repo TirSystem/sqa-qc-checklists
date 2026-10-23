@@ -10,8 +10,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-14 | Accepted | Jens Tirsvad Nielsen | S02 | Added criteria 17 and 18 (layer folders; file and folder names); accepted by the author as stand-in for S02 (Coding Standards Governance), through the pull request that merges this row; not independent of the author | [f65bb81] |
 | 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S02 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | [404f664] |
+| 2026-10-23 | Proposed | Jens Tirsvad Nielsen | S02 | Added criteria 19 and 20 (Observer through `event`; documented SIMD and CUDA optimisation); criterion 3 forbids `var`; criterion 21 requires regions in `src/` | pending |
 
 ---
 
@@ -27,7 +27,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | --- | --- | --- | --- | --- |
 | 1 | Types, methods, properties and constants are `PascalCase`; parameters and locals `camelCase`; private fields `_camelCase`; interfaces start with `I` | Mandatory | Maintainability, Interaction Capability | |
 | 2 | Async methods end in `Async`; exceptions end in `Exception`; one top-level type per file, named after the file | Mandatory | Maintainability, Interaction Capability | |
-| 3 | Code is formatted per the project's `.editorconfig` and builds with no unexplained analyzer suppressions | Mandatory | Maintainability | |
+| 3 | Code is formatted per the project's `.editorconfig` and builds with no unexplained analyzer suppressions; locals, `foreach` variables and `out` arguments have an explicit type, never `var` | Mandatory | Maintainability | |
 | 4 | Nullable reference types are enabled; the null-forgiving operator (`!`) is justified in a comment | Mandatory | Reliability | |
 | 5 | `IDisposable` objects are disposed with `using`; no resource leaks on exception paths | Mandatory | Reliability, Performance Efficiency | |
 | 6 | Async code uses `await` throughout: no `.Result` or `.Wait()` and no `async void` outside event handlers | Mandatory | Reliability, Performance Efficiency | |
@@ -43,6 +43,9 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 16 | SOLID holds: a class has one reason to change; new behaviour is added by extension, not by editing a type test in several places; subtypes honour the contract of their base; interfaces are narrow; high-level code depends on interfaces and receives its implementations by injection | Mandatory | Maintainability | Single responsibility is the most commonly violated. Rule: `coding-conventions` skill, “SOLID” |
 | 17 | Source is laid out in the layers and folders of the clean architecture folder structure (the projects `<App>.Domain`, `<App>.Application`, `<App>.Infrastructure` and `<App>.Presentation` under `src/`, and `unit`, `integration` and `e2e` under `tests/`), in `PascalCase`, and project references between the layers point inward | Mandatory | Maintainability, Flexibility | Structure: see the `clean-architecture` skill, "Folder structure". A merged layer is accepted when an ADR says why; `Domain` is never merged |
 | 18 | File and folder names are English, contain no space and no character outside letters, digits, `-`, `_` and `.`, and follow the casing of the language for files | Mandatory | Interaction Capability, Maintainability, Flexibility | Names: rule 16 of `coding-conventions`; well-known names (`README.md`, `LICENSE`) and wiki page names are exceptions |
+| 19 | Observers are notified through the `event` keyword and delegates: events are `EventHandler<TEventArgs>` (or a justified custom delegate), named in the past tense, raised only by the publisher through `Handler?.Invoke(this, e)`; there is no hand-rolled observer list and no public delegate field; a subscriber that outlives its need unsubscribes | Mandatory | Reliability, Maintainability | Rule: `coding-conventions` C# reference, "Observer pattern" |
+| 20 | Code optimised with SIMD (for example AVX2) or CUDA keeps a scalar reference implementation that a test compares with the accelerated result, guards each intrinsic path with `IsSupported` and falls back, handles the tail elements, and reaches CUDA through a port in Infrastructure; the improvement is documented (hardware and runtime, input sizes, a checked-in benchmark, scalar and accelerated times, speed-up) | Mandatory | Performance Efficiency, Reliability, Flexibility | Rule: `coding-conventions` C# reference, "Hardware acceleration". Not applicable when the code has no acceleration |
+| 21 | Every type under `src/` groups its members in `#region` blocks in the standard order and names (`Fields`, `Constructors`, `Properties`, `Events`, `Public methods`, `Protected methods`, `Private methods`, `Nested types`), each closed by a named `#endregion`, none nested and none inside a method body | Mandatory | Maintainability | Purpose: a quick overview of the code. Rule: `coding-conventions` C# reference, "Regions". Tests are exempt |
 
 ## Common Defects
 
@@ -58,6 +61,9 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 - A class with several unrelated responsibilities, or `is`/`switch` type tests repeated in several places
 - Source files in one flat folder, or a layer that exists only by a naming habit and not as a project or directory
 - File or folder names with a space, in a language other than English, or in another language's casing
+- A type in `src/` with members in no region, in a different order, or a region that splits a member
+- A hand-rolled `List<IObserver>`, a public delegate field, or a handler never unsubscribed from a longer-lived publisher
+- An intrinsic call without an `IsSupported` check, or an "optimisation" with no benchmark and no scalar result to compare against
 
 ## Traceability Rule
 
