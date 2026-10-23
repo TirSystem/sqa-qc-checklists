@@ -11,7 +11,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-14 | Accepted | Jens Tirsvad Nielsen | S02 | Added criteria 17 and 18 (layer folders; file and folder names); accepted by the author as stand-in for S02 (Coding Standards Governance), through the pull request that merges this row; not independent of the author | [f65bb81] |
-| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S02 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | pending |
+| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S02 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | [404f664] |
 
 ---
 
@@ -70,3 +70,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-ADR-001]: ../artifacts/qc-adr.md
 [QC-WF-001]: ./qc-workflow.md
 [f65bb81]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/f65bb81af825478f73e0f65463c69c32fe8b45c9
+[404f664]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9

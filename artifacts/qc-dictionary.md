@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-03 | Proposed | Jens Tirsvad Nielsen | S07 | Criterion 7 rewritten for the single-file rule (no translated twins); QC-LANG-001 added to CrossReference | — |
-| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S07 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | pending |
+| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S07 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | [404f664] |
 
 ---
 
@@ -51,3 +51,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-OC-001]: ./qc-operation-contract.md
 [QC-DCD-001]: ./qc-dcd.md
 [QC-LANG-001]: ./qc-language-domain.md
+[404f664]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9
