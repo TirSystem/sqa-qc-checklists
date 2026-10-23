@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-02 | Accepted | Jens Tirsvad Nielsen | S07 | Initial version | — |
 | 2026-10-03 | Proposed | Jens Tirsvad Nielsen | S07 | Criterion 7 rewritten for the single-file rule (no translated twins); QC-LANG-001 added to CrossReference | — |
+| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S07 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | pending |
 
 ---
 
@@ -26,11 +26,11 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | --- | --- | --- | --- | --- |
 | 1 | Every row has a PO term, its language, an IT term and a definition | Mandatory | Functional Suitability | An incomplete row cannot be applied consistently |
 | 2 | Each PO term maps to exactly one IT term and the reverse (no synonyms) | Mandatory | Maintainability | Synonyms are how the two vocabularies drift |
-| 3 | Every Domain Model concept has a row, and the Domain Model uses its PO term | Mandatory | Functional Suitability, Usability | Checks the Domain Model against the dictionary |
+| 3 | Every Domain Model concept has a row, and the Domain Model uses its PO term | Mandatory | Functional Suitability, Interaction Capability | Checks the Domain Model against the dictionary |
 | 4 | The Operation Contracts, Sequence Diagrams, Design Class Diagrams and ERD use the IT term, not the PO term | Mandatory | Maintainability | A PO term in design artifacts is a defect |
-| 5 | Definitions are written in the PO language and are one sentence | Optional | Usability | |
+| 5 | Definitions are written in the PO language and are one sentence | Optional | Interaction Capability | |
 | 6 | "Used as PO term in" and "Used as IT term in" name artifact types that exist in the project | Optional | Maintainability | |
-| 7 | The dictionary's `Language` and `Domain` rows, and the language of every row, match the PO language and domain in the project registry | Mandatory | Usability, Maintainability | Replaces the translated-artifacts check: there is no translated twin, the PO-language file is the artifact. Whether other artifacts use the dictionary's terms is checked by the language and domain checklist ([QC-LANG-001]) |
+| 7 | The dictionary's `Language` and `Domain` rows, and the language of every row, match the PO language and domain in the project registry | Mandatory | Interaction Capability, Maintainability | Replaces the translated-artifacts check: there is no translated twin, the PO-language file is the artifact. Whether other artifacts use the dictionary's terms is checked by the language and domain checklist ([QC-LANG-001]) |
 
 ## Common Defects
 

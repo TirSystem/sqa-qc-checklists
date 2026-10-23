@@ -11,6 +11,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-01 | Accepted | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
+| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S07 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | pending |
 
 ---
 
@@ -30,12 +31,12 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 4 | Preconditions and postconditions are explicitly defined | Mandatory | All | Functional Suitability | |
 | 5 | Primary actor is explicitly stated | Mandatory | All | Functional Suitability | |
 | 6 | Stakeholders and their interests are stated | Mandatory | Fully Dressed | Functional Suitability | |
-| 7 | Main success scenario is written as clear, numbered steps | Mandatory | Fully Dressed | Usability, Maintainability | |
+| 7 | Main success scenario is written as clear, numbered steps | Mandatory | Fully Dressed | Interaction Capability, Maintainability | |
 | 8 | Alternative/exception flows correctly reference `<<include>>`/`<<extend>>` use cases where relevant, per UML 2.5.1 | Mandatory | Fully Dressed | Functional Suitability, Maintainability | |
 | 9 | Explicit business rules are captured per step where applicable, rather than embedded loosely in narrative text | Optional | Fully Dressed | Functional Suitability, Reliability | |
 | 10 | Naming of actors and use case title is consistent with the corresponding Use Case Diagram and User Stories | Mandatory | All | Compatibility, Maintainability | |
-| 11 | Scope/level (e.g. summary, user-goal, subfunction) is explicitly stated | Optional | All | Usability, Maintainability | |
-| 12 | Use case is written from the actor's goal perspective, free of UI or implementation detail | Mandatory | All | Usability, Portability | |
+| 11 | Scope/level (e.g. summary, user-goal, subfunction) is explicitly stated | Optional | All | Interaction Capability, Maintainability | |
+| 12 | Use case is written from the actor's goal perspective, free of UI or implementation detail | Mandatory | All | Interaction Capability, Flexibility | |
 
 ## Common Defects
 

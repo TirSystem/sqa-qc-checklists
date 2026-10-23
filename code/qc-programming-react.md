@@ -11,6 +11,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-18 | Proposed | Jens Tirsvad Nielsen | S02 | Created with the React conventions of the `coding-conventions` skill | [772e160] |
+| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S02 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | pending |
 
 ---
 
@@ -24,9 +25,9 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 
 | # | Criterion | Level | ISO/IEC 25010 Characteristic(s) | Notes |
 | --- | --- | --- | --- | --- |
-| 1 | Components and types are `PascalCase`; functions and variables `camelCase`; hooks start with `use`; module-level constants `UPPER_SNAKE`; component files `PascalCase.tsx`, other files and folders `kebab-case` | Mandatory | Maintainability, Usability | |
-| 2 | Names state purpose in the domain's language; props types are named `<Component>Props`; booleans read as a question; handlers are `on…` (props) and `handle…` (implementations) | Mandatory | Maintainability, Usability | |
-| 3 | `tsc --noEmit` passes in `strict` mode; ESLint (with `typescript-eslint`, `react-hooks` and `jsx-a11y`) is clean, or each disable is justified | Mandatory | Reliability, Portability | |
+| 1 | Components and types are `PascalCase`; functions and variables `camelCase`; hooks start with `use`; module-level constants `UPPER_SNAKE`; component files `PascalCase.tsx`, other files and folders `kebab-case` | Mandatory | Maintainability, Interaction Capability | |
+| 2 | Names state purpose in the domain's language; props types are named `<Component>Props`; booleans read as a question; handlers are `on…` (props) and `handle…` (implementations) | Mandatory | Maintainability, Interaction Capability | |
+| 3 | `tsc --noEmit` passes in `strict` mode; ESLint (with `typescript-eslint`, `react-hooks` and `jsx-a11y`) is clean, or each disable is justified | Mandatory | Reliability, Flexibility | |
 | 4 | Code is produced by `prettier` (the check passes); imports are ordered; no unused import; lock file and configuration are committed | Mandatory | Maintainability | |
 | 5 | Components and hooks are pure: render does no fetch, timer, subscription or DOM write; hooks are called only at the top level; state is never mutated | Mandatory | Reliability | Rules of React |
 | 6 | State is minimal: derived values are computed in render, not stored; remote data is held by one server-state library, not copied into local state | Mandatory | Maintainability, Performance Efficiency | |
@@ -34,15 +35,15 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 8 | No `any`, and no `!` or `as` cast without a comment; props are typed; alternatives are discriminated unions; data from the network is validated at the boundary | Mandatory | Reliability, Security | |
 | 9 | Lists use a stable unique `key`, not the array index of a reorderable list | Mandatory | Reliability | |
 | 10 | Errors are handled at a boundary that can act (`try`/`catch`, error boundary), never an empty `catch`; no floating promise; no stack trace or secret reaches the user | Mandatory | Reliability, Security | |
-| 11 | Semantic elements are used (not a clickable `div`); inputs have labels, images have `alt`, and the UI works by keyboard | Mandatory | Usability | Accessibility |
+| 11 | Semantic elements are used (not a clickable `div`); inputs have labels, images have `alt`, and the UI works by keyboard | Mandatory | Interaction Capability | Accessibility |
 | 12 | No `dangerouslySetInnerHTML` with unsanitised input and no secret in the client bundle; `memo`, `useMemo` and `useCallback` appear only where a measurement or an identity requirement justifies them | Optional | Security, Performance Efficiency | |
 | 13 | Components and operations trace to the Design Class Diagram they implement; deviations are recorded | Mandatory | Functional Suitability, Maintainability | |
 | 14 | Each piece of knowledge (a business rule, constant, format, validation or query) is defined in one place; code is merged only where it expresses the same knowledge, not where it merely looks alike | Mandatory | Maintainability | Modularity, Reusability. Rule: `coding-conventions` skill, “State each piece of knowledge once” |
-| 15 | Dependencies point inward: `domain` and `application` import no `react`, DOM or network code, are imported through a layer's `index.ts`, and the import graph has no cycles | Mandatory | Maintainability, Portability | Modularity, Portability. Rule: `coding-conventions` skill, “Dependencies point inward” |
+| 15 | Dependencies point inward: `domain` and `application` import no `react`, DOM or network code, are imported through a layer's `index.ts`, and the import graph has no cycles | Mandatory | Maintainability, Flexibility | Modularity, Flexibility. Rule: `coding-conventions` skill, “Dependencies point inward” |
 | 16 | SOLID holds: a component or module has one reason to change; new behaviour is added by composition or a new type, not by editing a flag or type switch in several places; interfaces and props are narrow; high-level code depends on a port it owns and receives the implementation | Mandatory | Maintainability | Rule: `coding-conventions` skill, “SOLID” |
-| 17 | Source is laid out in the layers and folders of the clean architecture folder structure (`domain/`, `application/`, `infrastructure/` and `presentation/` under `src/`, features grouped under `presentation/`, and unit, integration and end-to-end tests separated) | Mandatory | Maintainability, Portability | Structure: see the `clean-architecture` skill, "Folder structure". A merged layer is accepted when an ADR says why; `Domain` is never merged |
-| 18 | File and folder names are English, contain no space and no character outside letters, digits, `-`, `_` and `.`, and follow the casing of the language for files | Mandatory | Usability, Maintainability, Portability | Names: rule 16 of `coding-conventions` |
-| 19 | Tests cover new behaviour, query by role, label or text, use fake timers and a fake network, and end-to-end tests run in a container or sandbox, not on the host desktop | Optional | Reliability, Usability | |
+| 17 | Source is laid out in the layers and folders of the clean architecture folder structure (`domain/`, `application/`, `infrastructure/` and `presentation/` under `src/`, features grouped under `presentation/`, and unit, integration and end-to-end tests separated) | Mandatory | Maintainability, Flexibility | Structure: see the `clean-architecture` skill, "Folder structure". A merged layer is accepted when an ADR says why; `Domain` is never merged |
+| 18 | File and folder names are English, contain no space and no character outside letters, digits, `-`, `_` and `.`, and follow the casing of the language for files | Mandatory | Interaction Capability, Maintainability, Flexibility | Names: rule 16 of `coding-conventions` |
+| 19 | Tests cover new behaviour, query by role, label or text, use fake timers and a fake network, and end-to-end tests run in a container or sandbox, not on the host desktop | Optional | Reliability, Interaction Capability | |
 
 ## Common Defects
 

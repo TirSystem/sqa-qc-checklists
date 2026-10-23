@@ -11,6 +11,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-01 | Accepted | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
+| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S07 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | pending |
 
 ---
 
@@ -31,7 +32,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 5 | Stakeholders are cross-referenced to Stakeholder Analysis IDs rather than re-described inline | Mandatory | Maintainability | |
 | 6 | Methodology and quality-standard foundation are stated explicitly (e.g. ISO/IEC 25010, Larman) | Optional | Compatibility | |
 | 7 | Assumptions and constraints are explicit and clearly distinguished from one another | Mandatory | Functional Suitability | |
-| 8 | Document supports executive decision-making with a clear, unambiguous recommendation | Mandatory | Usability | |
+| 8 | Document supports executive decision-making with a clear, unambiguous recommendation | Mandatory | Interaction Capability | |
 
 ## Common Defects
 

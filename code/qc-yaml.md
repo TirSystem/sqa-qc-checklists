@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-11 | Deprecated | Jens Tirsvad Nielsen | S07 | Criterion 7 cites the coding-conventions reference for the five-line limit (RC-077 action item) | [a7db402] |
 | 2026-10-11 | Accepted | Jens Tirsvad Nielsen | S02 | Accepted by S02 on 2026-10-11 (confirmed in chat, relayed by the author), through the pull request that merges this row; the first review is confirmed by S07 and its conditions are closed; no criterion changes | [a686ac1] |
+| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S02 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | pending |
 
 ---
 
@@ -30,14 +30,14 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 2 | Indentation is 2 spaces everywhere, never tabs; lines end with LF; the file ends with one newline and has no trailing spaces | Mandatory | Maintainability | |
 | 3 | Passes `yamllint` (or the project's YAML linter) with its configuration committed next to the code and no unexplained `disable` comments | Mandatory | Maintainability, Reliability | State the tool version |
 | 4 | A scalar that YAML would coerce to another type is quoted: `yes`, `no`, `on`, `off`, `null`, `~`, numbers with a leading zero, versions such as `1.10`, and values that contain `: ` or ` #` | Mandatory | Reliability | The `on` and `1.10` cases are the usual ones; quote versions and country codes |
-| 5 | Only safe, plain types are used: no language-specific tags (`!!python/object`, `!ruby/object`) and no `!include`-style extension unless the consuming tool documents it | Mandatory | Security, Portability | Unsafe tags allow code execution in some loaders |
+| 5 | Only safe, plain types are used: no language-specific tags (`!!python/object`, `!ruby/object`) and no `!include`-style extension unless the consuming tool documents it | Mandatory | Security, Flexibility | Unsafe tags allow code execution in some loaders |
 | 6 | No secret is written in the file: no password, token, key or private connection string; a secret is referenced by name and supplied by the consuming tool | Mandatory | Security | |
 | 7 | Embedded program text (shell, Python, SQL, `jq`, and so on) in a value is at most five lines; a longer one is moved to a file of its own, in its own language, and the YAML calls it | Mandatory | Maintainability, Reliability | Only a separate file can be linted, formatted and unit tested. The limit is defined in the `coding-conventions` skill (`references/yaml.md`, language rules, "Embedded program text"); this criterion is its check, and criterion 20 of [QC-WF-001] applies it to a workflow |
 | 8 | A block of keys or values repeated in the file or across files is defined once (an anchor, a template, an include or a reusable unit the consumer supports) | Mandatory | Maintainability | Modularity, Reusability. Rule: `coding-conventions` skill, “State each piece of knowledge once” |
-| 9 | Anchors, aliases and merge keys (`&`, `*`, `<<`) are used only where the consuming tool is known to support them | Mandatory | Portability, Compatibility | A tool that does not expand them reads the literal text |
+| 9 | Anchors, aliases and merge keys (`&`, `*`, `<<`) are used only where the consuming tool is known to support them | Mandatory | Flexibility, Compatibility | A tool that does not expand them reads the literal text |
 | 10 | The file validates against the schema of the consuming tool where one exists, and the schema or tool version is stated | Optional | Reliability, Compatibility | |
-| 11 | A header comment states what the file is for, which tool reads it, and where its decision or design is recorded | Mandatory | Usability, Maintainability | Comments say why, not what |
-| 12 | Key names follow the convention of the consuming tool; one case style is used within the file (kebab-case or snake_case, never mixed) | Mandatory | Maintainability, Usability | |
+| 11 | A header comment states what the file is for, which tool reads it, and where its decision or design is recorded | Mandatory | Interaction Capability, Maintainability | Comments say why, not what |
+| 12 | Key names follow the convention of the consuming tool; one case style is used within the file (kebab-case or snake_case, never mixed) | Mandatory | Maintainability, Interaction Capability | |
 | 13 | Multi-line strings use a block scalar (`\|` or `>`) and state the chomping indicator (`\|-`, `\|+`) where the trailing newline matters | Optional | Reliability | |
 | 14 | The file name is lowercase kebab-case with one extension style (`.yml` or `.yaml`) used throughout the repository | Optional | Maintainability | |
 | 15 | A change is exercised by a check that runs without the real target: a parse and schema test, or a dry run of the consuming tool | Optional | Reliability | |
@@ -69,5 +69,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 
 [QC-WF-001]: ./qc-workflow.md
 [QC-ADR-001]: ../artifacts/qc-adr.md
-[a7db402]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/a7db402192c1eb8704258002d5e3451df8774214
 [a686ac1]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/a686ac140157cf6c607bef8d96959cd4ce8d0468

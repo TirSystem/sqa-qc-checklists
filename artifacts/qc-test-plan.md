@@ -11,6 +11,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-20 | Proposed | Jens Tirsvad Nielsen | S02 | Created | [671993f] |
+| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S02 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | pending |
 
 ---
 
@@ -31,10 +32,10 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 5 | Each postcondition and each exception of an operation contract in scope is covered by at least one test case | Mandatory | Functional Suitability, Reliability | |
 | 6 | Boundary-value cases list the limits of each input range and test at, just below and just above each limit | Mandatory | Reliability | |
 | 7 | Levels are stated (unit, integration, end-to-end) with the tool and the folder under `tests/` for each, and unit tests use fakes with no network and no fixed sleep | Mandatory | Maintainability, Reliability | |
-| 8 | Test environments and test data are stated; a GUI or end-to-end test names its environment (Docker container or Windows Sandbox), never the host desktop | Mandatory | Reliability, Portability | `process/gui-testing.md` |
+| 8 | Test environments and test data are stated; a GUI or end-to-end test names its environment (Docker container or Windows Sandbox), never the host desktop | Mandatory | Reliability, Flexibility | `process/gui-testing.md` |
 | 9 | Entry and exit criteria are objectively checkable and feed the Go/No-Go of the milestone that depends on the plan | Mandatory | Maintainability | |
 | 10 | The risks in the Risk Analysis that testing mitigates are listed, each with the test cases that address it | Optional | Reliability, Security | |
-| 11 | Non-functional tests (performance, security, accessibility, portability) are planned where a quality requirement exists, each with a measurable threshold | Optional | Performance Efficiency, Security, Usability, Portability | A size or speed goal is a number, not a word |
+| 11 | Non-functional tests (performance, security, accessibility, portability) are planned where a quality requirement exists, each with a measurable threshold | Optional | Performance Efficiency, Security, Interaction Capability, Flexibility | A size or speed goal is a number, not a word |
 | 12 | The exploratory kind has a charter and a time box, and each defect it finds becomes a scripted regression test | Optional | Reliability | |
 | 13 | Defect handling is stated: where defects are recorded, how severity is set, and that every fixed defect gets a regression test | Optional | Maintainability | |
 

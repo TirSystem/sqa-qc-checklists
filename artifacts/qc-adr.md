@@ -10,8 +10,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-01 | Accepted | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
 | 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Cited QC-YML-001 as a forward checklist (RC-077) | [140bc3c] |
+| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S07 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | pending |
 
 ---
 
@@ -28,13 +28,13 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 1 | The ID (`ADR-NNNN`, 4-digit) matches the filename number and is unique and sequential | Mandatory | Maintainability | |
 | 2 | Context states the problem, the forces (cost, risk, constraints) and the options evaluated | Mandatory | Functional Suitability, Maintainability | |
 | 3 | At least two options were considered, or the absence of alternatives is justified | Mandatory | Functional Suitability | |
-| 4 | Decision is stated in one or two unhedged sentences and matches one of the evaluated options | Mandatory | Functional Suitability, Usability | |
+| 4 | Decision is stated in one or two unhedged sentences and matches one of the evaluated options | Mandatory | Functional Suitability, Interaction Capability | |
 | 5 | Consequences list both Positive and Negative outcomes | Mandatory | Maintainability, Reliability | |
-| 6 | Quality-attribute impacts (performance, security, portability, etc.) are named where the decision affects them | Optional | Performance Efficiency, Security, Portability, Compatibility | |
+| 6 | Quality-attribute impacts (performance, security, portability, etc.) are named where the decision affects them | Optional | Performance Efficiency, Security, Flexibility, Compatibility | |
 | 7 | Affected Artifacts are listed as links, and each is also in CrossReference | Mandatory | Maintainability | |
 | 8 | Status changes are recorded as new Version History rows with a Change summary and Commit link; retained rows are never rewritten | Mandatory | Reliability, Maintainability | |
 | 9 | A superseded or deprecated ADR names its successor, and the successor links back | Optional | Maintainability | |
-| 10 | Written in business or technical language of the domain, with no unexplained abbreviations | Optional | Usability | |
+| 10 | Written in business or technical language of the domain, with no unexplained abbreviations | Optional | Interaction Capability | |
 | 11 | Status is one of `Proposed`, `Accepted`, `Rejected`, `Deprecated` or `Superseded by ADR-NNNN`, and every Version History row uses only these | Mandatory | Reliability, Maintainability | `Approved` is not an ADR status |
 
 ## Common Defects

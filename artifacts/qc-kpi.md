@@ -11,6 +11,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-01 | Accepted | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
+| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S07 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | pending |
 
 ---
 
@@ -27,10 +28,10 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 1 | KPI is defined in SMART format (Specific, Measurable, Achievable, Relevant, Time-bound) | Mandatory | Functional Suitability | Reject vague or non-quantifiable KPI statements. |
 | 2 | Baseline and target values are both defined | Mandatory | Functional Suitability, Reliability | Without a baseline, progress cannot be measured. |
 | 3 | KPI is aligned with a stated Business Case success criterion | Mandatory | Functional Suitability | Cross-check against Business Case Success Criteria table. |
-| 4 | An owner/stakeholder is assigned for tracking the KPI | Mandatory | Usability, Maintainability | Ensures accountability for ongoing measurement. |
+| 4 | An owner/stakeholder is assigned for tracking the KPI | Mandatory | Interaction Capability, Maintainability | Ensures accountability for ongoing measurement. |
 | 5 | Measurement frequency and method are explicitly stated | Mandatory | Reliability, Maintainability | E.g. "measured monthly via review-cycle audit logs." |
-| 6 | Data source for the measurement is identified and accessible | Optional | Reliability, Portability | Prevents KPIs that cannot actually be measured in practice. |
-| 7 | KPI thresholds distinguish acceptable, at-risk, and failing performance | Optional | Functional Suitability, Usability | Supports clear reporting and decision-making. |
+| 6 | Data source for the measurement is identified and accessible | Optional | Reliability, Flexibility | Prevents KPIs that cannot actually be measured in practice. |
+| 7 | KPI thresholds distinguish acceptable, at-risk, and failing performance | Optional | Functional Suitability, Interaction Capability | Supports clear reporting and decision-making. |
 
 ## Common Defects
 

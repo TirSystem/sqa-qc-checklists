@@ -11,6 +11,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-01 | Accepted | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
+| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S07 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | pending |
 
 ---
 
@@ -29,7 +30,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 3 | Object creation/destruction of the System instance handled explicitly where relevant | Optional | Functional Suitability | Applies mainly to session/transaction-scoped interactions |
 | 4 | Return values are shown for operations that produce one, using dashed return arrows | Mandatory | Functional Suitability | Missing return arrows hide important system responses |
 | 5 | Alternate/exceptional flows are represented separately (or explicitly out of scope noted) | Mandatory | Reliability | Prevents conflating happy-path and error-path in a single diagram |
-| 6 | Message names are verb phrases consistent with the use case's system responsibilities | Optional | Usability, Maintainability | Improves traceability to Operation Contracts |
+| 6 | Message names are verb phrases consistent with the use case's system responsibilities | Optional | Interaction Capability, Maintainability | Improves traceability to Operation Contracts |
 | 7 | Diagram references the specific Use Case (name and ID) it depicts | Mandatory | Maintainability | Required for backward traceability |
 
 ## Common Defects

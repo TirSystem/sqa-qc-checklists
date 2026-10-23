@@ -10,8 +10,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-01 | Accepted | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
 | 2026-10-15 | Accepted | Jens Tirsvad Nielsen | S07 | Added criteria 9 and 10 (source story and priority; role matrix for more than one primary actor); accepted by the author as stand-in for S07, through the pull request that merges this row; not independent of the author | [b818ee7] |
+| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S07 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | pending |
 
 ---
 
@@ -30,8 +30,8 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 3 | Include/extend relationships are used correctly per UML 2.5.1, not as generic "uses" arrows | Mandatory | Functional Suitability, Maintainability | |
 | 4 | Every actor participates in at least one use case (no orphan actors) | Mandatory | Functional Suitability | |
 | 5 | Diagram is traceable to a documented stakeholder need | Mandatory | Functional Suitability, Maintainability | |
-| 6 | Use case names are verb phrases describing actor goals, not internal system operations | Mandatory | Usability, Maintainability | |
-| 7 | Diagram is free of implementation detail (e.g. UI widgets, database tables) | Optional | Maintainability, Portability | |
+| 6 | Use case names are verb phrases describing actor goals, not internal system operations | Mandatory | Interaction Capability, Maintainability | |
+| 7 | Diagram is free of implementation detail (e.g. UI widgets, database tables) | Optional | Maintainability, Flexibility | |
 | 8 | Actor and use case naming is consistent with corresponding Use Case and User Story documents | Optional | Compatibility, Maintainability | |
 | 9 | Each use case lists the user story it comes from and its priority (MoSCoW) with a reason | Optional | Maintainability, Functional Suitability | |
 | 10 | When there is more than one primary actor, a role matrix (use case by role) is present and marked as a suggestion for the Product Owner to approve | Optional | Security, Maintainability | The roles come from the actors; actors with the same permissions share a role. The matrix says which use cases a role may perform, not which data it may see |

@@ -11,6 +11,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-01 | Accepted | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
+| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S07 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | pending |
 
 ---
 
@@ -27,11 +28,11 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 1 | Power/Interest grid is filled for every stakeholder, with no gaps or unclassified entries | Mandatory | Functional Suitability | |
 | 2 | Each stakeholder is assigned a unique, stable ID (e.g. S01-S11 style) reusable for RACI assignments in other artifacts | Mandatory | Maintainability | |
 | 3 | Roles and organizational context are defined with explicit Power and Interest levels, not just narrative description | Mandatory | Functional Suitability | |
-| 4 | Communication needs (channel, frequency, deliverable type) are mapped to project phases or milestones | Optional | Usability | |
+| 4 | Communication needs (channel, frequency, deliverable type) are mapped to project phases or milestones | Optional | Interaction Capability | |
 | 5 | Conflicting stakeholder interests are identified with documented mitigation or resolution strategies | Mandatory | Reliability | |
 | 6 | Stakeholder concerns are explicitly traced to Business Case objectives | Mandatory | Maintainability | |
 | 7 | Primary concerns are expressed in both business language and a recognized quality-attribute mapping (e.g. FURPS+) | Optional | Functional Suitability | |
-| 8 | Document is understandable and navigable by non-technical stakeholders reviewing their own entry | Optional | Usability | |
+| 8 | Document is understandable and navigable by non-technical stakeholders reviewing their own entry | Optional | Interaction Capability | |
 
 ## Common Defects
 

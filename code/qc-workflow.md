@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-11 | Deprecated | Jens Tirsvad Nielsen | S07 | Criterion 2 records the instance check: Gitea Actions ran .gitea/workflows/ and ignored .github/workflows/ when both existed (RC-078 action item) | [74d49da] |
 | 2026-10-11 | Accepted | Jens Tirsvad Nielsen | S02 | Accepted by S02 on 2026-10-11 (confirmed in chat, relayed by the author), through the pull request that merges this row; the first review is confirmed by S07 and its conditions are closed; no criterion changes | [a686ac1] |
+| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S02 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | pending |
 
 ---
 
@@ -31,8 +31,8 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 1 | The file meets the YAML checklist ([QC-YML-001]) | Mandatory | Maintainability, Reliability | |
 | 2 | The file is in `.gitea/workflows/` or `.github/workflows/` with the extension `.yml` or `.yaml`, and the same workflow does not exist in both directories | Mandatory | Reliability, Compatibility | Which directory a host reads is host behaviour: record it for the instance (criterion 22). Gitea Actions was observed to run `.gitea/workflows/` and ignore `.github/workflows/` when both exist (Gitea 1.27.3, push event); confirm it on your version. A copy in the ignored directory does nothing, and a fix made only there is lost |
 | 3 | The file declares `name`, `on` and `jobs`; `on` lists explicit events and, where it matters, `branches` or `paths` | Mandatory | Functional Suitability | |
-| 4 | A header comment states the purpose, the triggers, the inputs, the secrets it needs, what it changes outside the repository, and the decision or milestone it implements | Mandatory | Usability, Maintainability | |
-| 5 | Every job and step has a descriptive `name`, unique within its job | Mandatory | Usability, Maintainability | The default name is the first line of the command |
+| 4 | A header comment states the purpose, the triggers, the inputs, the secrets it needs, what it changes outside the repository, and the decision or milestone it implements | Mandatory | Interaction Capability, Maintainability | |
+| 5 | Every job and step has a descriptive `name`, unique within its job | Mandatory | Interaction Capability, Maintainability | The default name is the first line of the command |
 | 6 | The file passes `actionlint` (or the project's workflow validation test) and the tool version is stated | Mandatory | Reliability, Maintainability | A host-only context such as `gitea.*` may need the linter's configuration |
 
 ### Security
@@ -56,7 +56,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 16 | Triggers are filtered (`branches`, `paths`, `types`) so the workflow runs only for the changes it concerns | Mandatory | Performance Efficiency | |
 | 17 | Tools and dependencies are installed at pinned versions; a version is a workflow input with a default or a value in one place | Mandatory | Reliability, Maintainability | |
 | 18 | A dependency cache is used where the install is slow enough to matter | Optional | Performance Efficiency | |
-| 19 | A failing step names the tool, the file and the reason in its log (annotation or `::error::` line) | Optional | Usability, Reliability | |
+| 19 | A failing step names the tool, the file and the reason in its log (annotation or `::error::` line) | Optional | Interaction Capability, Reliability | |
 
 ### Maintainability and portability
 
@@ -64,7 +64,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | --- | --- | --- | --- | --- |
 | 20 | A `run:` block is within the limit on embedded program text of criterion 7 of [QC-YML-001]; a longer script is a file (`tools/`, or a shared repository fetched at a pinned ref) that the step calls with one command, and the workflow passes its settings through `env:` | Mandatory | Maintainability, Reliability | The limit is defined in the `coding-conventions` skill (`references/yaml.md`) and checked by criterion 7 of [QC-YML-001]; this criterion applies it to workflows and does not restate it. A script file can be linted, formatted and tested; one inside YAML cannot. The script meets its language checklist |
 | 21 | Logic used by more than one workflow or repository is a reusable workflow (`workflow_call`) or a composite action; each input has a `description`, a `type` and a `default` where one is sensible | Mandatory | Maintainability | Modularity, Reusability. Rule: `coding-conventions` skill, “State each piece of knowledge once” |
-| 22 | Every workflow feature used is verified on the instance that runs it, and the host and version are recorded; a feature the target hosts differ on is noted in the header | Mandatory | Portability, Compatibility | State the Gitea version. `github.*` contexts exist on both hosts; `gitea.*` exists only on Gitea, so a workflow that uses it does not run on GitHub Actions: say so in the header |
+| 22 | Every workflow feature used is verified on the instance that runs it, and the host and version are recorded; a feature the target hosts differ on is noted in the header | Mandatory | Flexibility, Compatibility | State the Gitea version. `github.*` contexts exist on both hosts; `gitea.*` exists only on Gitea, so a workflow that uses it does not run on GitHub Actions: say so in the header |
 | 23 | A reusable workflow states, in its header, how a caller pins it and the script it fetches, so the workflow and its script are the same release | Optional | Reliability, Maintainability | |
 | 24 | A static test of the repository's workflows exists and runs on every pull request: valid YAML, required keys, explicit permissions and runner, no inline script above the limit | Optional | Reliability | |
 
@@ -106,5 +106,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-SH-001]: ./qc-programming-shell.md
 [QC-PY-001]: ./qc-programming-python.md
 [QC-ADR-001]: ../artifacts/qc-adr.md
-[74d49da]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/74d49dae05c5a34c114bf17646680174f0bf95e6
 [a686ac1]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/a686ac140157cf6c607bef8d96959cd4ce8d0468
