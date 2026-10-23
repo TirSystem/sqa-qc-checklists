@@ -11,6 +11,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-01 | Accepted | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
+| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S07 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | [404f664] |
 
 ---
 
@@ -25,12 +26,12 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | # | Criterion | Level | ISO/IEC 25010 Characteristic(s) | Notes |
 | --- | --- | --- | --- | --- |
 | 1 | Diagram uses valid BPMN 2.0 syntax (events, gateways, activities, sequence/message flows) | Mandatory | Functional Suitability, Compatibility | Verify element types and notation conform to the BPMN 2.0 specification. |
-| 2 | Swimlanes/pools are clearly defined for each participant | Mandatory | Usability, Functional Suitability | Every actor/role involved in the process has its own lane or pool. |
+| 2 | Swimlanes/pools are clearly defined for each participant | Mandatory | Interaction Capability, Functional Suitability | Every actor/role involved in the process has its own lane or pool. |
 | 3 | No dead-end flows; every path reaches a defined end event | Mandatory | Functional Suitability, Reliability | Trace each branch from start to end event. |
 | 4 | Gateway split/join logic is consistent (matching AND/XOR pairs) | Mandatory | Functional Suitability, Reliability | A gateway that splits a flow must be closed by a matching gateway type. |
 | 5 | Process maps to a stated business goal from the Business Case | Mandatory | Functional Suitability | Cross-check against Business Case objectives/scope. |
 | 6 | Message flows correctly cross pool boundaries and internal sequence flows do not | Mandatory | Functional Suitability, Compatibility | Common notation error to check explicitly. |
-| 7 | Diagram is readable without excessive flow crossings or ambiguous labeling | Optional | Usability, Maintainability | Supports faster, less error-prone reviews and maintenance. |
+| 7 | Diagram is readable without excessive flow crossings or ambiguous labeling | Optional | Interaction Capability, Maintainability | Supports faster, less error-prone reviews and maintenance. |
 
 ## Common Defects
 
@@ -50,3 +51,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-BC-001]: ./qc-business-case.md
 [QC-SA-001]: ./qc-stakeholder-analysis.md
 [QC-UCD-001]: ./qc-use-case-diagram.md
+[404f664]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9

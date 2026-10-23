@@ -10,8 +10,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-09 | Deprecated | Jens Tirsvad Nielsen | S02 | Accepted by the author as stand-in for S02 (Coding Standards Governance), through the pull request that merges this row; the delta re-review of the new criteria is a draft confirmed by the author as stand-in, not independently | [b5e5613] |
 | 2026-10-14 | Accepted | Jens Tirsvad Nielsen | S02 | Added criteria 16 and 17 (layer folders; file and folder names); accepted by the author as stand-in for S02 (Coding Standards Governance), through the pull request that merges this row; not independent of the author | [f65bb81] |
+| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S02 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | [404f664] |
 
 ---
 
@@ -26,8 +26,8 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | # | Criterion | Level | ISO/IEC 25010 Characteristic(s) | Notes |
 | --- | --- | --- | --- | --- |
 | 1 | Functions and variables are `snake_case`; public symbols carry the module prefix; macros and enum constants are `UPPER_SNAKE` | Mandatory | Maintainability, Compatibility | |
-| 2 | No reserved identifiers (leading underscore plus uppercase, double underscore) | Mandatory | Portability, Reliability | |
-| 3 | Code compiles cleanly with the project's warning flags and the declared C standard | Mandatory | Reliability, Portability | |
+| 2 | No reserved identifiers (leading underscore plus uppercase, double underscore) | Mandatory | Flexibility, Reliability | |
+| 3 | Code compiles cleanly with the project's warning flags and the declared C standard | Mandatory | Reliability, Flexibility | |
 | 4 | Code is produced by the project's formatter; braces are used on every control-flow body | Mandatory | Maintainability | |
 | 5 | Every return value that can fail, including allocation, is checked | Mandatory | Reliability | |
 | 6 | Every acquired resource (memory, file, lock) has one owner and is released on every exit path | Mandatory | Reliability, Performance Efficiency | |
@@ -35,13 +35,13 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 8 | No undefined behaviour: no signed overflow, use after free, out-of-bounds access or uninitialised reads | Mandatory | Reliability, Security | |
 | 9 | Headers are self-contained, guarded, and expose only what callers need; internals are `static` | Mandatory | Maintainability, Compatibility | |
 | 10 | Mutable global state is avoided, or is `static` and documented | Optional | Maintainability, Reliability | |
-| 11 | Error reporting (status codes, `errno` use) is documented in the header | Optional | Usability, Reliability | |
+| 11 | Error reporting (status codes, `errno` use) is documented in the header | Optional | Interaction Capability, Reliability | |
 | 12 | Tests cover new behaviour and run under address and undefined-behaviour sanitizers in at least one build | Optional | Reliability, Security | |
 | 13 | Modules and functions trace to the Design Class Diagram or design artifact they implement | Mandatory | Functional Suitability, Maintainability | |
 | 14 | Each piece of knowledge (a business rule, constant, format, validation or query) is defined in one place; code is merged only where it expresses the same knowledge, not where it merely looks alike | Mandatory | Maintainability | Modularity, Reusability. Rule: `coding-conventions` skill, “State each piece of knowledge once” |
-| 15 | Includes point inward: business-rule modules include no I/O, platform or UI headers, the include graph has no cycles, and a module has one responsibility (rules are not mixed with I/O) | Mandatory | Maintainability, Portability | Modularity, Portability. Rule: `coding-conventions` skill, “Dependencies point inward” |
-| 16 | Source is laid out in the layers and folders of the clean architecture folder structure (`domain/`, `application/`, `infrastructure/` and `presentation/` directories under `src/`, and `unit`, `integration` and `e2e` under `tests/`), in `snake_case`, and includes between the layers point inward | Mandatory | Maintainability, Portability | Structure: see the `clean-architecture` skill, "Folder structure". A merged layer is accepted when an ADR says why; `Domain` is never merged |
-| 17 | File and folder names are English, contain no space and no character outside letters, digits, `-`, `_` and `.`, and follow the casing of the language for files | Mandatory | Usability, Maintainability, Portability | Names: rule 16 of `coding-conventions`; well-known names (`README.md`, `LICENSE`) and wiki page names are exceptions |
+| 15 | Includes point inward: business-rule modules include no I/O, platform or UI headers, the include graph has no cycles, and a module has one responsibility (rules are not mixed with I/O) | Mandatory | Maintainability, Flexibility | Modularity, Flexibility. Rule: `coding-conventions` skill, “Dependencies point inward” |
+| 16 | Source is laid out in the layers and folders of the clean architecture folder structure (`domain/`, `application/`, `infrastructure/` and `presentation/` directories under `src/`, and `unit`, `integration` and `e2e` under `tests/`), in `snake_case`, and includes between the layers point inward | Mandatory | Maintainability, Flexibility | Structure: see the `clean-architecture` skill, "Folder structure". A merged layer is accepted when an ADR says why; `Domain` is never merged |
+| 17 | File and folder names are English, contain no space and no character outside letters, digits, `-`, `_` and `.`, and follow the casing of the language for files | Mandatory | Interaction Capability, Maintainability, Flexibility | Names: rule 16 of `coding-conventions`; well-known names (`README.md`, `LICENSE`) and wiki page names are exceptions |
 
 ## Common Defects
 
@@ -67,5 +67,5 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 
 [QC-DCD-001]: ../artifacts/qc-dcd.md
 [QC-ADR-001]: ../artifacts/qc-adr.md
-[b5e5613]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/b5e5613a384527a18cd40594fc24cac4bdd11a31
 [f65bb81]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/f65bb81af825478f73e0f65463c69c32fe8b45c9
+[404f664]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9

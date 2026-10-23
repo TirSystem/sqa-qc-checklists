@@ -19,12 +19,12 @@ Setiap `qc-<jenis>.md` (dalam `artifacts/` untuk dokumen, dalam `code/` untuk ko
 
 | # | Criterion | Level | ISO/IEC 25010 Characteristic(s) | Notes |
 | --- | --- | --- | --- | --- |
-| 2 | Written in "As a / I want / So that" form | Mandatory | Usability | |
+| 2 | Written in "As a / I want / So that" form | Mandatory | Interaction Capability | |
 
 - **Mandatory**: asas yang mesti dipenuhi setiap instans.
 - **Optional**: lanjutan; boleh ditangguhkan dengan sebab.
 - **Ciri ISO/IEC 25010**: ciri kualiti produk yang dilindungi kriteria
-  (Functional Suitability, Reliability, Usability, Maintainability, Security,
+  (Functional Suitability, Reliability, Interaction Capability, Maintainability, Security,
   Compatibility, ...). Ia membolehkan penyemak melihat *jenis* kualiti yang
   terjejas apabila kriteria gagal, bukan sekadar bahawa ia gagal.
 

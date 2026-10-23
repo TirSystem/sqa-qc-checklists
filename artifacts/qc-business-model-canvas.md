@@ -11,6 +11,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-01 | Accepted | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
+| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S07 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | [404f664] |
 
 ---
 
@@ -25,12 +26,12 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | # | Criterion | Level | ISO/IEC 25010 Characteristic(s) | Notes |
 | --- | --- | --- | --- | --- |
 | 1 | All 9 building blocks (Key Partners, Key Activities, Key Resources, Value Propositions, Customer Relationships, Channels, Customer Segments, Cost Structure, Revenue Streams) are populated, with no empty sections | Mandatory | Functional Suitability | |
-| 2 | Value proposition aligns with stakeholder needs documented in the Stakeholder Analysis | Mandatory | Usability | |
+| 2 | Value proposition aligns with stakeholder needs documented in the Stakeholder Analysis | Mandatory | Interaction Capability | |
 | 3 | Assumptions underlying the canvas are explicit and testable | Mandatory | Reliability | |
 | 4 | Revenue streams and cost structure are internally consistent with each other | Mandatory | Functional Suitability | |
 | 5 | Customer segments and channels are consistent with stakeholder groups already identified | Optional | Compatibility | |
 | 6 | Canvas cross-references the Business Case objectives it operationalizes, rather than restating them | Mandatory | Maintainability | |
-| 7 | Canvas is reviewable as a single, concise overview (one-page) | Optional | Usability | |
+| 7 | Canvas is reviewable as a single, concise overview (one-page) | Optional | Interaction Capability | |
 
 ## Common Defects
 
@@ -51,3 +52,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-SA-001]: ./qc-stakeholder-analysis.md
 [QC-BPMN-001]: ./qc-bpmn.md
 [QC-KPI-001]: ./qc-kpi.md
+[404f664]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9

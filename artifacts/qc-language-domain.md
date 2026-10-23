@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-10 | Deprecated | Jens Tirsvad Nielsen | S07 | Common Defects: added a line for criterion 4 (register) and one for criterion 10 (abbreviations); the Commit cell of the first row is now a link | [1d1988f] |
 | 2026-10-10 | Accepted | Jens Tirsvad Nielsen | S07 | Accepted by the author as stand-in for S07, through the pull request that merges this row, without an independent review; the first review is recorded in the project (Go-with-conditions, the two conditions are this change) | [7024240] |
+| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S07 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | [404f664] |
 
 ---
 
@@ -24,16 +24,16 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 
 | # | Criterion | Level | ISO/IEC 25010 Characteristic(s) | Notes |
 | --- | --- | --- | --- | --- |
-| 1 | The Metadata table has a `Language` row and a `Domain` row, and neither is a placeholder | Mandatory | Usability, Maintainability | A reviewer must see at once how to read the document |
+| 1 | The Metadata table has a `Language` row and a `Domain` row, and neither is a placeholder | Mandatory | Interaction Capability, Maintainability | A reviewer must see at once how to read the document |
 | 2 | `Language` is a BCP 47 code and `Domain` is a value from the registry's domain list | Mandatory | Maintainability | Free-text values cannot be listed or compared |
-| 3 | The content (prose and table cells) is written in the stated language | Mandatory | Usability | Quoted source text and established technical terms may stay in another language; a document half in one language and half in another fails |
-| 4 | The register matches the one the registry gives for the artifact type | Mandatory | Usability | The register fixes the reader the text assumes and how much it explains |
-| 5 | Domain terms are the PO terms of the domain's dictionary, with no synonyms | Mandatory | Usability, Maintainability | A second word for a dictionary term is a defect |
+| 3 | The content (prose and table cells) is written in the stated language | Mandatory | Interaction Capability | Quoted source text and established technical terms may stay in another language; a document half in one language and half in another fails |
+| 4 | The register matches the one the registry gives for the artifact type | Mandatory | Interaction Capability | The register fixes the reader the text assumes and how much it explains |
+| 5 | Domain terms are the PO terms of the domain's dictionary, with no synonyms | Mandatory | Interaction Capability, Maintainability | A second word for a dictionary term is a defect |
 | 6 | Metadata keys, section headings, IDs and statuses are in English | Mandatory | Maintainability, Compatibility | The scripts read them; only the content is in the PO language |
 | 7 | No translated twin (`<name>.<language>.md`) exists beside the document | Mandatory | Maintainability | One file per artifact; two files drift apart |
 | 8 | A change of language or domain since the previous accepted version has a Version History row and was reviewed again | Mandatory | Maintainability | Changing the language of an artifact is a material change |
 | 9 | A reviewer competent in the domain, and in the language, has confirmed that the domain terms are used correctly | Mandatory | Functional Suitability | May be a second reviewer named on the review record when the first does not read the language or know the domain |
-| 10 | Abbreviations are spelled out on first use, in the stated language | Optional | Usability | |
+| 10 | Abbreviations are spelled out on first use, in the stated language | Optional | Interaction Capability | |
 
 ## Common Defects
 
@@ -54,5 +54,5 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 ---
 
 [QC-DICT-001]: ./qc-dictionary.md
-[1d1988f]: https://git.tirsystem.com/TirSystem/sqa-qc-checklists/commit/1d1988f8af73c29f0945bdf8e2b9c80eda99a53c
 [7024240]: https://git.tirsystem.com/TirSystem/sqa-qc-checklists/commit/70242402e2c93842a1c099e1cb6d902af0d79ef2
+[404f664]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9

@@ -10,8 +10,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-09 | Deprecated | Jens Tirsvad Nielsen | S02 | Added criterion 9 (dependency direction) | [304ec77] |
 | 2026-10-09 | Accepted | Jens Tirsvad Nielsen | S02 | Accepted by the author as stand-in for S02 (Coding Standards Governance), through the pull request that merges this row; the delta re-review of the new criteria is a draft confirmed by the author as stand-in, not independently | [b5e5613] |
+| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S02 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | [404f664] |
 
 ---
 
@@ -33,7 +33,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 6 | Method signatures are traceable to Operation Contracts and/or design Sequence Diagrams | Mandatory | Functional Suitability, Maintainability | Prevents drift between design layers |
 | 7 | Class names and structure remain consistent with the Domain Model concepts they refine | Mandatory | Maintainability, Compatibility | Design classes should not silently rename or drop domain concepts |
 | 8 | No circular dependencies between classes/packages unless explicitly justified | Optional | Maintainability, Reliability | Circular coupling harms testability and portability |
-| 9 | Dependencies between classes and packages point inward: domain classes do not depend on infrastructure, delivery or framework classes | Mandatory | Maintainability, Portability | Business rules must be buildable and testable without the outer layers; cycles are criterion 8 |
+| 9 | Dependencies between classes and packages point inward: domain classes do not depend on infrastructure, delivery or framework classes | Mandatory | Maintainability, Flexibility | Business rules must be buildable and testable without the outer layers; cycles are criterion 8 |
 
 ## Common Defects
 
@@ -58,5 +58,5 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-CL-001]: ../code/qc-programming-c.md
 [QC-CPP-001]: ../code/qc-programming-cpp.md
 [QC-CS-001]: ../code/qc-programming-csharp.md
-[304ec77]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/304ec7751bd39ff6d54862c2cd10958ef90123ff
 [b5e5613]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/b5e5613a384527a18cd40594fc24cac4bdd11a31
+[404f664]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9

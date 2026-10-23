@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-09 | Accepted | Jens Tirsvad Nielsen | S02 | Accepted by the author as stand-in for S02 (Coding Standards Governance), through the pull request that merges this row; the delta re-review of the new criteria is a draft confirmed by the author as stand-in, not independently | [b5e5613] |
 | 2026-10-11 | Proposed | Jens Tirsvad Nielsen | S07 | Cited QC-WF-001 as a backward checklist (RC-078) | [140bc3c] |
+| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S07 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | [404f664] |
 
 ---
 
@@ -26,18 +26,18 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | --- | --- | --- | --- | --- |
 | 1 | Starts with `#!/usr/bin/env bash` and `set -euo pipefail` (or a comment explains the exception) | Mandatory | Reliability | |
 | 2 | Every expansion is quoted; lists are arrays; tests use `[[ ]]` and `$(...)` | Mandatory | Reliability, Security | Unquoted expansions break on spaces and globs |
-| 3 | Names follow the conventions: `kebab-case.sh` files, `snake_case` functions and variables, `UPPER_SNAKE` constants and environment variables | Mandatory | Maintainability, Usability | |
+| 3 | Names follow the conventions: `kebab-case.sh` files, `snake_case` functions and variables, `UPPER_SNAKE` constants and environment variables | Mandatory | Maintainability, Interaction Capability | |
 | 4 | Passes `shellcheck` and `bash -n` with no unexplained `disable` comments | Mandatory | Maintainability, Reliability | State the tool versions used |
-| 5 | Errors go to standard error with an `error:` message and a non-zero exit code; bad or missing arguments print a usage line | Mandatory | Reliability, Usability | |
+| 5 | Errors go to standard error with an `error:` message and a non-zero exit code; bad or missing arguments print a usage line | Mandatory | Reliability, Interaction Capability | |
 | 6 | Temporary files use `mktemp` with a `trap ... EXIT` cleanup; no fixed `/tmp` names | Mandatory | Security, Reliability | |
 | 7 | No secret is written in the script, echoed, or put on a command line; secrets come from the environment or a gitignored file | Mandatory | Security | |
 | 8 | A script that changes state outside its own directory defaults to a dry run or needs an explicit flag, and says so in its header | Mandatory | Reliability, Security | |
-| 9 | A header comment states purpose, usage, options, environment variables and exit codes | Mandatory | Usability, Maintainability | |
+| 9 | A header comment states purpose, usage, options, environment variables and exit codes | Mandatory | Interaction Capability, Maintainability | |
 | 10 | The script implements a task or design it cites; deviations are recorded | Mandatory | Functional Suitability, Maintainability | |
 | 11 | Behaviour is tested for success, failure and any disabled or bypass path | Mandatory | Reliability | Tests may be a recorded manual run |
 | 12 | Formatted with `shfmt` (or the project's formatter) | Optional | Maintainability | |
 | 13 | Safe to re-run: a second run does not duplicate or corrupt what the first did | Optional | Reliability | |
-| 14 | Bash version and external tools it needs are stated; GNU-only options are named | Optional | Portability | |
+| 14 | Bash version and external tools it needs are stated; GNU-only options are named | Optional | Flexibility | |
 | 15 | A command sequence, constant, path or message used more than once is defined once (a function, a variable or a sourced helper); a helper is shared between scripts only where it expresses the same knowledge | Mandatory | Maintainability | Modularity, Reusability. Rule: `coding-conventions` skill, “State each piece of knowledge once” |
 
 ## Common Defects
@@ -60,6 +60,6 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 
 [QC-DCD-001]: ../artifacts/qc-dcd.md
 [QC-ADR-001]: ../artifacts/qc-adr.md
-[b5e5613]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/b5e5613a384527a18cd40594fc24cac4bdd11a31
 [QC-WF-001]: ./qc-workflow.md
 [140bc3c]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/140bc3c12df74238e332ff149243ef3e6255e208
+[404f664]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9

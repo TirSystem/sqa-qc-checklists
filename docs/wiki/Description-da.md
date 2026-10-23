@@ -19,12 +19,12 @@ Hver `qc-<type>.md` (i `artifacts/` for dokumenter, i `code/` for kildekode, scr
 
 | # | Criterion | Level | ISO/IEC 25010 Characteristic(s) | Notes |
 | --- | --- | --- | --- | --- |
-| 2 | Written in "As a / I want / So that" form | Mandatory | Usability | |
+| 2 | Written in "As a / I want / So that" form | Mandatory | Interaction Capability | |
 
 - **Mandatory**: grundniveauet, hver instans skal opfylde.
 - **Optional**: avanceret; kan udskydes med en begrundelse.
 - **ISO/IEC 25010-egenskab**: hvilken produktkvalitetsegenskab kriteriet
-  beskytter (Functional Suitability, Reliability, Usability, Maintainability,
+  beskytter (Functional Suitability, Reliability, Interaction Capability, Maintainability,
   Security, Compatibility, ...). Den lader en reviewer se, *hvilken slags*
   kvalitet et ikke-bestået kriterium bringer i fare, ikke blot at det fejlede.
 

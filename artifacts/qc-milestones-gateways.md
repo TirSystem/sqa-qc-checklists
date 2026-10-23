@@ -11,6 +11,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-01 | Accepted | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
+| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S07 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | [404f664] |
 
 ---
 
@@ -28,7 +29,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 2 | Explicit Go/No-Go criteria are stated for each gate | Mandatory | Functional Suitability, Reliability | Criteria must be objectively checkable, not subjective. |
 | 3 | Dependencies on other milestones are explicitly mapped | Optional | Functional Suitability, Maintainability | Prevents scheduling conflicts and hidden ordering assumptions. |
 | 4 | Each milestone is traceable to a Business Case objective or KPI | Mandatory | Functional Suitability | Cross-check against Business Case Objectives/Success Criteria. |
-| 5 | Milestone owner and approving reviewer are identified | Mandatory | Usability, Maintainability | Ensures accountability for the Go/No-Go decision. |
+| 5 | Milestone owner and approving reviewer are identified | Mandatory | Interaction Capability, Maintainability | Ensures accountability for the Go/No-Go decision. |
 | 6 | Milestone has a defined target date consistent with project constraints | Mandatory | Reliability | Cross-check against Business Case Constraints (e.g. 12-week duration). |
 
 ## Common Defects
@@ -48,3 +49,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 
 [QC-BC-001]: ./qc-business-case.md
 [QC-KPI-001]: ./qc-kpi.md
+[404f664]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9

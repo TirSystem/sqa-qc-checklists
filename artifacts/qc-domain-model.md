@@ -11,6 +11,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-01 | Accepted | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
+| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S07 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | [404f664] |
 
 ---
 
@@ -24,10 +25,10 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 
 | # | Criterion | Level | ISO/IEC 25010 Characteristic(s) | Notes |
 | --- | --- | --- | --- | --- |
-| 1 | Uses ubiquitous/business language throughout; no technical or implementation jargon (e.g. no "table", "class", "pointer") | Mandatory | Maintainability, Usability | Domain concepts must be recognizable to business stakeholders |
+| 1 | Uses ubiquitous/business language throughout; no technical or implementation jargon (e.g. no "table", "class", "pointer") | Mandatory | Maintainability, Interaction Capability | Domain concepts must be recognizable to business stakeholders |
 | 2 | Multiplicities on associations are correct and complete (e.g. `1..*`, `0..1`) | Mandatory | Functional Suitability | Missing or vague multiplicities are a common defect |
 | 3 | No operation/method signatures shown — attributes and associations only | Mandatory | Maintainability | Domain Model is conceptual, not a design class diagram |
-| 4 | Associations are named with an unambiguous reading direction | Optional | Usability, Maintainability | e.g. "Order — placed by — Customer" |
+| 4 | Associations are named with an unambiguous reading direction | Optional | Interaction Capability, Maintainability | e.g. "Order — placed by — Customer" |
 | 5 | Generalization/specialization used correctly, reflecting true "is-a" relationships, not misused for code reuse | Optional | Functional Suitability, Maintainability | Larman warns against inheritance abuse for implementation convenience |
 | 6 | Every concept traces to a noun phrase found in the use cases or glossary | Mandatory | Functional Suitability | Prevents invented concepts with no requirement source |
 | 7 | Attributes are simple domain data (no foreign-key-like references or object pointers modeled as attributes) | Mandatory | Maintainability | Relationships should be modeled as associations, not attribute references |
@@ -50,3 +51,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-UC-001]: ./qc-use-case.md
 [QC-UCD-001]: ./qc-use-case-diagram.md
 [QC-SSD-001]: ./qc-ssd.md
+[404f664]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9

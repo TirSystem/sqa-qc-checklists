@@ -19,12 +19,12 @@ Every `qc-<type>.md` (in `artifacts/` for documents, in `code/` for source code,
 
 | # | Criterion | Level | ISO/IEC 25010 Characteristic(s) | Notes |
 | --- | --- | --- | --- | --- |
-| 2 | Written in "As a / I want / So that" form | Mandatory | Usability | |
+| 2 | Written in "As a / I want / So that" form | Mandatory | Interaction Capability | |
 
 - **Mandatory**: the baseline every instance must meet.
 - **Optional**: advanced; may be deferred, with a reason.
 - **ISO/IEC 25010 characteristic**: which product-quality characteristic the
-  criterion protects (Functional Suitability, Reliability, Usability,
+  criterion protects (Functional Suitability, Reliability, Interaction Capability,
   Maintainability, Security, Compatibility, ...). It lets a reviewer see
   *what kind* of quality a failed criterion puts at risk, not only that it failed.
 
