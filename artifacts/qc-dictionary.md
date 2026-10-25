@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-03 | Proposed | Jens Tirsvad Nielsen | S07 | Criterion 7 rewritten for the single-file rule (no translated twins); QC-LANG-001 added to CrossReference | — |
 | 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S07 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | [404f664] |
+| 2026-10-25 | Proposed | Jens Tirsvad Nielsen | S07 | Added criterion 8 (rows in ascending order of the PO term) | [931179f] |
 
 ---
 
@@ -31,6 +31,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 5 | Definitions are written in the PO language and are one sentence | Optional | Interaction Capability | |
 | 6 | "Used as PO term in" and "Used as IT term in" name artifact types that exist in the project | Optional | Maintainability | |
 | 7 | The dictionary's `Language` and `Domain` rows, and the language of every row, match the PO language and domain in the project registry | Mandatory | Interaction Capability, Maintainability | Replaces the translated-artifacts check: there is no translated twin, the PO-language file is the artifact. Whether other artifacts use the dictionary's terms is checked by the language and domain checklist ([QC-LANG-001]) |
+| 8 | The dictionary rows are in ascending order of the PO term (case-insensitive, by the alphabet of the PO language) | Mandatory | Interaction Capability, Maintainability | A sorted list is searched by eye and a new term has one place |
 
 ## Common Defects
 
@@ -38,6 +39,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 - The IT term used in the Domain Model, or the PO term in a design class
 - Two PO terms for one IT term
 - A definition copied from the IT term in the wrong language
+- Rows added at the end instead of at their place in the ascending order
 - A dictionary whose `Domain` row differs from the PO domain, or that mixes terms of two domains
 
 ## Traceability Rule
@@ -52,3 +54,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-DCD-001]: ./qc-dcd.md
 [QC-LANG-001]: ./qc-language-domain.md
 [404f664]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9
+[931179f]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/931179f7b4f20d1e4821a0bae5d4744ddabd71f1
