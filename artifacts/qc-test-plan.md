@@ -10,8 +10,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-20 | Proposed | Jens Tirsvad Nielsen | S02 | Created | [671993f] |
-| 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S02 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | [404f664] |
+| 2026-10-20 | Deprecated | Jens Tirsvad Nielsen | S02 | Created | [671993f] |
+| 2026-10-22 | Accepted | Jens Tirsvad Nielsen | S02 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083); accepted by the author as stand-in for S02 on the user's instruction in chat on 2026-10-26, through the pull request that merges this row; not independent | [404f664] |
 
 ---
 
