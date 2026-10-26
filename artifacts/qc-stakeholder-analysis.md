@@ -11,7 +11,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S07 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | [404f664] |
-| 2026-10-26 | Proposed | Jens Tirsvad Nielsen | S07 | Added criterion 9 (concern IDs) | pending |
+| 2026-10-26 | Proposed | Jens Tirsvad Nielsen | S07 | Added criterion 9 (concern IDs) | [f9409f9] |
 
 ---
 
@@ -55,3 +55,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-BMC-001]: ./qc-business-model-canvas.md
 [QC-KPI-001]: ./qc-kpi.md
 [404f664]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9
+[f9409f9]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/f9409f9260b24321b8f9a11b8ce3c40698fae9ac

@@ -11,7 +11,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-01 | Accepted | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
-| 2026-10-26 | Proposed | Jens Tirsvad Nielsen | S07 | Added criterion 9 (the Purpose names the concerns the view answers) | pending |
+| 2026-10-26 | Proposed | Jens Tirsvad Nielsen | S07 | Added criterion 9 (the Purpose names the concerns the view answers) | [f9409f9] |
 
 ---
 
@@ -54,3 +54,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 
 [QC-OC-001]: ./qc-operation-contract.md
 [QC-DCD-001]: ./qc-dcd.md
+[f9409f9]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/f9409f9260b24321b8f9a11b8ce3c40698fae9ac
