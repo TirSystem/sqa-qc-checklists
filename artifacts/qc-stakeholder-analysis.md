@@ -10,8 +10,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-01 | Accepted | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
 | 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S07 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | [404f664] |
+| 2026-10-26 | Proposed | Jens Tirsvad Nielsen | S07 | Added criterion 9 (concern IDs) | [f9409f9] |
 
 ---
 
@@ -33,6 +33,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 6 | Stakeholder concerns are explicitly traced to Business Case objectives | Mandatory | Maintainability | |
 | 7 | Primary concerns are expressed in both business language and a recognized quality-attribute mapping (e.g. FURPS+) | Optional | Functional Suitability | |
 | 8 | Document is understandable and navigable by non-technical stakeholders reviewing their own entry | Optional | Interaction Capability | |
+| 9 | Every concern has a stable ID (`CN-NNN`) in the concern register, with the stakeholder who raised it; IDs are never renumbered or reused | Mandatory | Maintainability, Functional Suitability | Other artifacts cite the ID: the views (viewpoints), the Traceability Matrix and the Architecture Description |
 
 ## Common Defects
 
@@ -41,6 +42,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 - Communication plan omitted, or not tied to any project phase/milestone
 - Conflicts of interest glossed over or left undocumented
 - No traceability linkage from stakeholder concerns back to Business Case objectives
+- Concerns without an ID, or an ID renumbered or reused
 
 ## Traceability Rule
 
@@ -53,3 +55,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-BMC-001]: ./qc-business-model-canvas.md
 [QC-KPI-001]: ./qc-kpi.md
 [404f664]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9
+[f9409f9]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/f9409f9260b24321b8f9a11b8ce3c40698fae9ac

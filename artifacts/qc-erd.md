@@ -10,8 +10,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-01 | Accepted | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
 | 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S07 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | [404f664] |
+| 2026-10-26 | Proposed | Jens Tirsvad Nielsen | S07 | Added criterion 8 (the Purpose names the concerns the view answers) | [f9409f9] |
 
 ---
 
@@ -32,6 +32,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 5 | Data types consistent with corresponding Operation Contract/DCD attribute types | Mandatory | Compatibility, Maintainability | Prevents silent type mismatches between design and storage |
 | 6 | N:M relationships resolved via explicit junction/associative entities | Mandatory | Functional Suitability | Required for correct relational representation |
 | 7 | Naming conventions for entities/attributes are consistent and free of implementation-specific abbreviations | Optional | Interaction Capability, Maintainability | Improves readability and long-term maintainability |
+| 8 | The Purpose names the concerns (`CN-NNN`) the Entity Relationship Diagram answers and the stakeholders it serves, so its viewpoint is stated | Optional | Interaction Capability, Maintainability | Viewpoint of ISO/IEC/IEEE 42010; see `process/architecture-description.md` of the framework |
 
 ## Common Defects
 
@@ -40,6 +41,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 - Unresolved N:M relationships without a junction entity
 - Data types inconsistent with the DCD/Operation Contracts they implement
 - Denormalization applied without documented performance justification
+- An Entity Relationship Diagram whose Purpose does not say which concerns it answers
 
 ## Traceability Rule
 
@@ -50,3 +52,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 
 [QC-DCD-001]: ./qc-dcd.md
 [404f664]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9
+[f9409f9]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/f9409f9260b24321b8f9a11b8ce3c40698fae9ac

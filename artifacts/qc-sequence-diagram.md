@@ -11,6 +11,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-01 | Accepted | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
+| 2026-10-26 | Proposed | Jens Tirsvad Nielsen | S07 | Added criterion 9 (the Purpose names the concerns the view answers) | [f9409f9] |
 
 ---
 
@@ -32,6 +33,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 6 | Responsibility assignment favors low coupling/high cohesion (no god-object receiving all messages) | Optional | Maintainability | Reviewer should check GRASP Controller isn't overloaded |
 | 7 | Loop, alt, and opt combined fragments used correctly for conditional/repeated behavior | Mandatory | Functional Suitability | Avoids ambiguous or missing control flow |
 | 8 | Each exception of the realized Operation Contract is shown as an `alt` or `opt` fragment, or its absence is justified | Optional | Reliability, Functional Suitability | Keeps the design consistent with the contract's error conditions |
+| 9 | The Purpose names the concerns (`CN-NNN`) the Sequence Diagram answers and the stakeholders it serves, so its viewpoint is stated | Optional | Interaction Capability, Maintainability | Viewpoint of ISO/IEC/IEEE 42010; see `process/architecture-description.md` of the framework |
 
 ## Common Defects
 
@@ -41,6 +43,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 - Missing creation/destruction notation for transient objects
 - Diagram does not actually satisfy the referenced Operation Contract's postconditions
 - An error condition of the Operation Contract that never appears in the diagram, or an error drawn as a fragment that does not stop the flow
+- A Sequence Diagram whose Purpose does not say which concerns it answers
 
 ## Traceability Rule
 
@@ -51,3 +54,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 
 [QC-OC-001]: ./qc-operation-contract.md
 [QC-DCD-001]: ./qc-dcd.md
+[f9409f9]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/f9409f9260b24321b8f9a11b8ce3c40698fae9ac

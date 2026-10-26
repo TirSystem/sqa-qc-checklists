@@ -10,8 +10,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-01 | Accepted | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
 | 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S07 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | [404f664] |
+| 2026-10-26 | Proposed | Jens Tirsvad Nielsen | S07 | Added criterion 8 (the Purpose names the concerns the view answers) | [f9409f9] |
 
 ---
 
@@ -32,6 +32,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 5 | Generalization/specialization used correctly, reflecting true "is-a" relationships, not misused for code reuse | Optional | Functional Suitability, Maintainability | Larman warns against inheritance abuse for implementation convenience |
 | 6 | Every concept traces to a noun phrase found in the use cases or glossary | Mandatory | Functional Suitability | Prevents invented concepts with no requirement source |
 | 7 | Attributes are simple domain data (no foreign-key-like references or object pointers modeled as attributes) | Mandatory | Maintainability | Relationships should be modeled as associations, not attribute references |
+| 8 | The Purpose names the concerns (`CN-NNN`) the Domain Model answers and the stakeholders it serves, so its viewpoint is stated | Optional | Interaction Capability, Maintainability | Viewpoint of ISO/IEC/IEEE 42010; see `process/architecture-description.md` of the framework |
 
 ## Common Defects
 
@@ -40,6 +41,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 - Missing or incorrect multiplicities on key associations
 - Unnamed or ambiguously-directioned associations
 - Overuse of generalization hierarchies for convenience rather than genuine taxonomy
+- A Domain Model whose Purpose does not say which concerns it answers
 
 ## Traceability Rule
 
@@ -52,3 +54,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-UCD-001]: ./qc-use-case-diagram.md
 [QC-SSD-001]: ./qc-ssd.md
 [404f664]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9
+[f9409f9]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/f9409f9260b24321b8f9a11b8ce3c40698fae9ac
