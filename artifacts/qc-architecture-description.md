@@ -10,7 +10,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-26 | Proposed | Jens Tirsvad Nielsen | S02 | Created | [f9409f9] |
+| 2026-10-26 | Accepted | Jens Tirsvad Nielsen | S02 | Created; accepted by the author as stand-in for S02 on the user's instruction in chat on 2026-10-26, through the pull request that merges this row; not independent | [f9409f9] |
 
 ---
 
