@@ -10,8 +10,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-01 | Accepted | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
 | 2026-10-22 | Proposed | Jens Tirsvad Nielsen | S07 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | [404f664] |
+| 2026-10-26 | Proposed | Jens Tirsvad Nielsen | S07 | Added criterion 8 (the Purpose names the concerns the view answers) | pending |
 
 ---
 
@@ -32,6 +32,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 5 | Process maps to a stated business goal from the Business Case | Mandatory | Functional Suitability | Cross-check against Business Case objectives/scope. |
 | 6 | Message flows correctly cross pool boundaries and internal sequence flows do not | Mandatory | Functional Suitability, Compatibility | Common notation error to check explicitly. |
 | 7 | Diagram is readable without excessive flow crossings or ambiguous labeling | Optional | Interaction Capability, Maintainability | Supports faster, less error-prone reviews and maintenance. |
+| 8 | The Purpose names the concerns (`CN-NNN`) the BPMN process model answers and the stakeholders it serves, so its viewpoint is stated | Optional | Interaction Capability, Maintainability | Viewpoint of ISO/IEC/IEEE 42010; see `process/architecture-description.md` of the framework |
 
 ## Common Defects
 
@@ -40,6 +41,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 - Missing end events, leaving process paths open-ended
 - Activities assigned to no lane, or to the wrong participant
 - Process diagram with no traceable link to a Business Case objective
+- A process model whose Purpose does not say which concerns it answers
 
 ## Traceability Rule
 

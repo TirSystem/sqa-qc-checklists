@@ -22,7 +22,7 @@ The checklists of documents are in `artifacts/`; those of source code, scripts a
 | --- | --- |
 | Business and analysis | `qc-business-case`, `qc-stakeholder-analysis`, `qc-kpi`, `qc-business-model-canvas`, `qc-bpmn`, `qc-governance`, `qc-milestones-gateways` |
 | Requirements | `qc-use-case-diagram`, `qc-use-case`, `qc-user-story` |
-| Design | `qc-domain-model`, `qc-ssd`, `qc-operation-contract`, `qc-sequence-diagram`, `qc-dcd`, `qc-erd`, `qc-adr` |
+| Design | `qc-domain-model`, `qc-ssd`, `qc-operation-contract`, `qc-sequence-diagram`, `qc-dcd`, `qc-erd`, `qc-architecture-description`, `qc-adr` |
 | Vocabulary, language, domain | `qc-dictionary`, `qc-language-domain` |
 | Source code (`code/`) | `qc-programming-python`, `-c`, `-cpp`, `-csharp`, `-shell` |
 | YAML and CI workflows (`code/`) | `qc-yaml`, `qc-workflow` |
