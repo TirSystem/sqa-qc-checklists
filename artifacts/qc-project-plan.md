@@ -11,7 +11,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-27 | Proposed | Jens Tirsvad Nielsen | S07 | First draft of the Project Plan checklist | [9b4541d] |
-| 2026-10-27 | Proposed | Jens Tirsvad Nielsen | S07 | Common Defects for criteria 1, 2, 9, 11, 12, 14 and 15; criterion 15 cites the rule of the artifact skill (RC-088) | pending |
+| 2026-10-27 | Proposed | Jens Tirsvad Nielsen | S07 | Common Defects for criteria 1, 2, 9, 11, 12, 14 and 15; criterion 15 cites the rule of the artifact skill (RC-088) | [fcd6cef] |
 
 ---
 
@@ -71,3 +71,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-MIL-001]: ./qc-milestones-gateways.md
 [QC-GOV-001]: ./qc-governance.md
 [9b4541d]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/9b4541d7cdc769fbda9a876628566d2fff8863d1
+[fcd6cef]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/fcd6cefb75d16dba37a073c24f3c123ee3033c53
