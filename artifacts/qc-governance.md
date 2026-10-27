@@ -10,8 +10,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-01 | Deprecated | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
 | 2026-10-22 | Accepted | Jens Tirsvad Nielsen | S07 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083); accepted by the author as stand-in for S07 on the user's instruction in chat on 2026-10-26, through the pull request that merges this row; not independent | [404f664] |
+| 2026-10-26 | Proposed | mikemike | S07 | Added criteria 11 to 13: blocking findings, risk exceptions, Pending criteria closed only by a person | [8871564] |
 
 Allowed Status values: `Proposed`, `Accepted`, `Rejected`, `Deprecated`. The latest reviewed row is `Accepted`; the row before it is `Deprecated`.
 
@@ -37,6 +37,9 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 8 | Review cadence is stated for artifact instances and for the checklists themselves | Mandatory | Maintainability | |
 | 9 | The document links the process artifacts it relies on (traceability matrix, review process, process model) | Optional | Maintainability, Interaction Capability | |
 | 10 | Written without duplicated words or unexplained abbreviations | Optional | Interaction Capability | |
+| 11 | A blocking finding (a `Fail` on a Mandatory criterion, or an open security finding rated High or Critical) gives `No-Go`; `Go-with-conditions` is allowed only for findings that do not block | Mandatory | Security, Reliability | A condition or action item never turns a blocking finding into `Go-with-conditions` |
+| 12 | A risk exception that lets a blocking finding pass names the finding, the owner, an approver who is neither the author nor the owner, an expiry date and the compensating controls; an expired exception is blocking again | Mandatory | Security, Reliability | An open-ended exception is a defect |
+| 13 | A criterion only a person can confirm stays `Pending` until a named reviewer independent of the author confirms it; the author's own assessment, a stand-in's or an AI author's, never closes it | Mandatory | Reliability, Interaction Capability | `Pending` allows `Go-with-conditions` at most |
 
 ## Common Defects
 
@@ -46,6 +49,9 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 - Status outcomes that use a value outside the allowed set, or leave a verdict's outcome undefined
 - An independence rule with no one to reassign to
 - Cadence stated for instances but not for the checklists
+- A Mandatory `Fail` accepted with `Go-with-conditions`
+- A risk exception with no expiry date, or approved by its own owner
+- A criterion only a person can confirm marked `Pass` on the author's assessment
 
 ## Traceability Rule
 
@@ -58,3 +64,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-SA-001]: ./qc-stakeholder-analysis.md
 [QC-BPMN-001]: ./qc-bpmn.md
 [404f664]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9
+[8871564]: https://git.tirsystem.com/TirSystem/sqa-qc-checklists/commit/887156429336277d61568d8452f72d6d0907b819
