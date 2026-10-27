@@ -10,7 +10,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-27 | Proposed | Jens Tirsvad Nielsen | S07 | First draft of the Project Plan checklist | pending |
+| 2026-10-27 | Proposed | Jens Tirsvad Nielsen | S07 | First draft of the Project Plan checklist | [9b4541d] |
 
 ---
 
@@ -62,3 +62,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-SA-001]: ./qc-stakeholder-analysis.md
 [QC-MIL-001]: ./qc-milestones-gateways.md
 [QC-GOV-001]: ./qc-governance.md
+[9b4541d]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/9b4541d7cdc769fbda9a876628566d2fff8863d1
