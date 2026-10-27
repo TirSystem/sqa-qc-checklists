@@ -9,7 +9,7 @@ ISO/IEC 25010:2023 quality characteristic.
 ## Contents
 
 - Business and analysis: Business Case, Stakeholder Analysis, KPI, Business
-  Model Canvas, BPMN, Governance, Milestones and gateways
+  Model Canvas, BPMN, Governance, Project Plan, Milestones and gateways
 - Requirements and design: Use Case Diagram, Use Case, User Story, Domain Model,
   SSD, Operation Contract, Sequence Diagram, DCD, ERD, ADR
 - Cross-cutting: Language and Domain (applies to every artifact type written in

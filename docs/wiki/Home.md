@@ -20,7 +20,7 @@ The checklists of documents are in `artifacts/`; those of source code, scripts a
 
 | Group | Files |
 | --- | --- |
-| Business and analysis | `qc-business-case`, `qc-stakeholder-analysis`, `qc-kpi`, `qc-business-model-canvas`, `qc-bpmn`, `qc-governance`, `qc-milestones-gateways` |
+| Business and analysis | `qc-business-case`, `qc-stakeholder-analysis`, `qc-kpi`, `qc-business-model-canvas`, `qc-bpmn`, `qc-governance`, `qc-milestones-gateways`, `qc-project-plan` |
 | Requirements | `qc-use-case-diagram`, `qc-use-case`, `qc-user-story` |
 | Design | `qc-domain-model`, `qc-ssd`, `qc-operation-contract`, `qc-sequence-diagram`, `qc-dcd`, `qc-erd`, `qc-architecture-description`, `qc-adr` |
 | Vocabulary, language, domain | `qc-dictionary`, `qc-language-domain` |

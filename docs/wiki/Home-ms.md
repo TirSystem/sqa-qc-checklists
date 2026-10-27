@@ -20,7 +20,7 @@ Senarai semak dokumen berada dalam `artifacts/`; senarai semak untuk kod sumber,
 
 | Kumpulan | Fail |
 | --- | --- |
-| Perniagaan dan analisis | `qc-business-case`, `qc-stakeholder-analysis`, `qc-kpi`, `qc-business-model-canvas`, `qc-bpmn`, `qc-governance`, `qc-milestones-gateways` |
+| Perniagaan dan analisis | `qc-business-case`, `qc-stakeholder-analysis`, `qc-kpi`, `qc-business-model-canvas`, `qc-bpmn`, `qc-governance`, `qc-milestones-gateways`, `qc-project-plan` |
 | Keperluan | `qc-use-case-diagram`, `qc-use-case`, `qc-user-story` |
 | Reka bentuk | `qc-domain-model`, `qc-ssd`, `qc-operation-contract`, `qc-sequence-diagram`, `qc-dcd`, `qc-erd`, `qc-architecture-description`, `qc-adr` |
 | Perbendaharaan kata, bahasa, domain | `qc-dictionary`, `qc-language-domain` |
