@@ -11,6 +11,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-27 | Proposed | Jens Tirsvad Nielsen | S07 | First draft of the Project Plan checklist | [9b4541d] |
+| 2026-10-27 | Proposed | Jens Tirsvad Nielsen | S07 | Common Defects for criteria 1, 2, 9, 11, 12, 14 and 15; criterion 15 cites the rule of the artifact skill (RC-088) | pending |
 
 ---
 
@@ -38,7 +39,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 12 | Gateways that deliver user stories name them, and those that do not say why | Optional | Functional Suitability, Maintainability | For example "none (technical tasks)". |
 | 13 | The schedule view (table, Gantt) and the dependency view agree with each other | Optional | Maintainability, Interaction Capability | Check bar dates against the table, and the chain against the dependency list. |
 | 14 | Each gateway is linked to its issue-tracker milestone, or marked as not yet synced | Optional | Maintainability | Keeps plan and tracker in step after a sync. |
-| 15 | The plan is a singleton: one Project Plan per project, changes recorded in Version History | Mandatory | Maintainability | Version History keeps the two latest rows, with the commit of each change. |
+| 15 | The plan is a singleton: one Project Plan per project, changes recorded in Version History | Mandatory | Maintainability | Check the Version History against the rule of the `artifact` skill. |
 
 ## Common Defects
 
@@ -50,6 +51,13 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 - Open issues that were closed long ago, or contradict the rest of the plan
 - Role names instead of Stakeholder Analysis IDs
 - Gantt chart out of step with the schedule table
+- No start date, end date or constraint, or an end date past the Business Case constraint
+- A gateway listed twice, missing its document, decision date or owner, or present in the plan but not in a `MIL-*` document
+- Plan risks with no impact or mitigation, or risks from the Business Case that the plan drops
+- A gateway deliverable that differs from the one in its `MIL-*` document
+- A gateway that delivers user stories but does not name them, or has none and does not say why
+- A gateway with no link to its issue-tracker milestone and no "not yet synced" mark
+- More than one Project Plan in a project, or a change to the plan with no Version History row
 
 ## Traceability Rule
 
