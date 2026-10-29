@@ -14,6 +14,7 @@ ISO/IEC 25010:2023 quality characteristic.
   SSD, Operation Contract, Sequence Diagram, DCD, ERD, ADR
 - Cross-cutting: Language and Domain (applies to every artifact type written in
   the Product Owner's language), Domain Dictionary
+- Documentation: Wiki (sidebar, languages, page set)
 - Source code and automation (`code/`): Python, C, C++, C#, shell, YAML files,
   CI workflows (Gitea Actions, GitHub Actions)
 
