@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-29 | Proposed | Jens Tirsvad Nielsen | S02 | Initial version: the sidebar, the language sections and the page set of a wiki | pending |
+| 2026-10-29 | Proposed | Jens Tirsvad Nielsen | S02 | Initial version: the sidebar, the language sections and the page set of a wiki | [f175606] |
 
 ---
 
@@ -73,3 +73,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 
 [QC-LANG-001]: ./qc-language-domain.md
 [QC-WF-001]: ../code/qc-workflow.md
+[f175606]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/f1756061a87b5ec8be09599f1f4142cf1e40c04e
