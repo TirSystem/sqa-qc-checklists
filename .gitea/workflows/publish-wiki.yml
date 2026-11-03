@@ -30,6 +30,8 @@ on:
 
 jobs:
   wiki:
+    permissions:
+      contents: read
     uses: TirSystem/github-action/.gitea/workflows/publish-wiki-pages.yml@v1
     with:
       wiki_dir: docs/wiki
