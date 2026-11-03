@@ -52,6 +52,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | --- | --- | --- | --- | --- |
 | 14 | The sidebar, every page and every link were checked on the published wiki after the change, not only in the repository | Mandatory | Reliability | A link that works in the folder can fail on the host |
 | 15 | A change to the layout rules (sections, order, naming) is made in the generator or template and in this checklist's source rules together | Optional | Maintainability | |
+| 16 | The wiki folder (`docs/wiki/`) is flat: every page, `Home.md` and `_Sidebar.md` included, is directly in it, and languages are told apart by file name, never by a subfolder | Mandatory | Compatibility, Reliability | `docs/wiki/en/Home.md` is not published; the publisher reads only top-level files |
 
 ## Common Defects
 
@@ -61,6 +62,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 - A `Related` section with a placeholder, or with a link that does not open
 - A page in the sidebar that does not exist, or an existing page that is not in the sidebar
 - A translation that lacks pages the English wiki has
+- Pages in a language subfolder (`docs/wiki/en/Home.md`): nothing is published and the publisher fails with "has no Markdown pages"
 - A page without the language line, or a language line that links to a missing page
 - Translation pages named with a different separator than the rest of the organisation, so one tool finds them and another does not
 
