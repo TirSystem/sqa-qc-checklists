@@ -5,13 +5,12 @@
 | --- | --- |
 | ID | QC-DCD-001 |
 | CrossReference | [QC-DM-001], [QC-SD-001], [QC-ERD-001], [QC-PY-001], [QC-CL-001], [QC-CPP-001], [QC-CS-001] |
-| DomainLanguages | IT Professional English |
 
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-22 | Deprecated | Jens Tirsvad Nielsen | S02 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | [404f664] |
-| 2026-10-26 | Accepted | Jens Tirsvad Nielsen | S02 | Added criterion 10 (the Purpose names the concerns the view answers); accepted by the author as stand-in for S02 on the user's instruction in chat on 2026-10-26, through the pull request that merges this row; not independent | [f9409f9] |
+| 2026-10-26 | Deprecated | Jens Tirsvad Nielsen | S02 | Added criterion 10 (the Purpose names the concerns the view answers); accepted by the author as stand-in for S02 on the user's instruction in chat on 2026-10-26, through the pull request that merges this row; not independent | [f9409f9] |
+| 2026-11-08 | Accepted | Jens Tirsvad Nielsen | S02 | Removed the obsolete DomainLanguages metadata row; the register is per artifact type in the project registry (issue 6); accepted by the author in chat as stand-in for S02, not independent | pending |
 
 ---
 

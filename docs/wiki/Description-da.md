@@ -8,7 +8,7 @@ Hver `qc-<type>.md` (i `artifacts/` for dokumenter, i `code/` for kildekode, scr
 
 | Afsnit | Indhold |
 | --- | --- |
-| `## Metadata` | `ID` (fx `QC-US-001`), `CrossReference` til relaterede tjeklister, `DomainLanguages` |
+| `## Metadata` | `ID` (fx `QC-US-001`), `CrossReference` til relaterede tjeklister |
 | `## Version History` | Dato, status, forfatter, reviewer, ændring |
 | `## Purpose` | Hvorfor artefakttypen findes, og hvad tjeklisten beskytter |
 | `## Quality Criteria Checklist` | Den nummererede kriterietabel |

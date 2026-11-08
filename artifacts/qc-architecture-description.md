@@ -5,12 +5,12 @@
 | --- | --- |
 | ID | QC-AD-001 |
 | CrossReference | [QC-BC-001], [QC-SA-001], [QC-DM-001], [QC-DCD-001], [QC-ERD-001], [QC-ADR-001], [QC-TP-001] |
-| DomainLanguages | IT Professional English |
 
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-26 | Accepted | Jens Tirsvad Nielsen | S02 | Created; accepted by the author as stand-in for S02 on the user's instruction in chat on 2026-10-26, through the pull request that merges this row; not independent | [f9409f9] |
+| 2026-10-26 | Deprecated | Jens Tirsvad Nielsen | S02 | Created; accepted by the author as stand-in for S02 on the user's instruction in chat on 2026-10-26, through the pull request that merges this row; not independent | [f9409f9] |
+| 2026-11-08 | Accepted | Jens Tirsvad Nielsen | S02 | Removed the obsolete DomainLanguages metadata row; the register is per artifact type in the project registry (issue 6); accepted by the author in chat as stand-in for S02, not independent | pending |
 
 ---
 
