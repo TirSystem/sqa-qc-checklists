@@ -5,12 +5,12 @@
 | --- | --- |
 | ID | QC-OC-001 |
 | CrossReference | [QC-SSD-001], [QC-DM-001], [QC-SD-001] |
-| DomainLanguages | IT Professional English |
 
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-01 | Accepted | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
+| 2026-10-01 | Deprecated | Jens Tirsvad Nielsen | S07 | First public release (1.0.0) | — |
+| 2026-11-08 | Accepted | Jens Tirsvad Nielsen | S07 | Removed the obsolete DomainLanguages metadata row; the register is per artifact type in the project registry (issue 6); accepted by the author in chat as stand-in for S07, not independent | [ce06e14] |
 
 ---
 
@@ -50,3 +50,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-SSD-001]: ./qc-ssd.md
 [QC-DM-001]: ./qc-domain-model.md
 [QC-SD-001]: ./qc-sequence-diagram.md
+[ce06e14]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/ce06e14cbe173c007b78858bd8a5474d1668e9ab

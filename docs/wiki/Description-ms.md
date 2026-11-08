@@ -8,7 +8,7 @@ Setiap `qc-<jenis>.md` (dalam `artifacts/` untuk dokumen, dalam `code/` untuk ko
 
 | Bahagian | Kandungan |
 | --- | --- |
-| `## Metadata` | `ID` (cth. `QC-US-001`), `CrossReference` kepada senarai semak berkaitan, `DomainLanguages` |
+| `## Metadata` | `ID` (cth. `QC-US-001`), `CrossReference` kepada senarai semak berkaitan |
 | `## Version History` | Tarikh, status, penulis, penyemak, perubahan |
 | `## Purpose` | Mengapa jenis artifak wujud dan apa yang dilindungi senarai semak |
 | `## Quality Criteria Checklist` | Jadual kriteria bernombor |
