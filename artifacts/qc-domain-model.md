@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-08 | Deprecated | Jens Tirsvad Nielsen | S07 | Removed the obsolete DomainLanguages metadata row; the register is per artifact type in the project registry (issue 6); accepted by the author in chat as stand-in for S07, not independent | [ce06e14] |
-| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | S07 | Added criteria 9 to 11 (no technical solution names; no empty concept; a use case model matches and is added to the project Domain Model) and three common defects; accepted by the author in chat as stand-in for S07, not independent | [5596e86] |
+| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | S07 | Added criteria 9 to 11 (no technical solution names; no empty concept; a use case model matches and is added to the project Domain Model) and three common defects; accepted by the author in chat as stand-in for S07, not independent | pending |
 
 ---
 
