@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-08 | Deprecated | Jens Tirsvad Nielsen | S07 | Removed the obsolete DomainLanguages metadata row; the register is per artifact type in the project registry (issue 6); accepted by the author in chat as stand-in for S07, not independent | [ce06e14] |
-| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | S07 | Added criteria 9 and 10 (no technical solution names; no empty concept) and two common defects; accepted by the author in chat as stand-in for S07, not independent | [5596e86] |
+| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | S07 | Added criteria 9 to 11 (no technical solution names; no empty concept; a use case model matches and is added to the project Domain Model) and three common defects; accepted by the author in chat as stand-in for S07, not independent | [5596e86] |
 
 ---
 
@@ -34,12 +34,14 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 8 | The Purpose names the concerns (`CN-NNN`) the Domain Model answers and the stakeholders it serves, so its viewpoint is stated | Optional | Interaction Capability, Maintainability | Viewpoint of ISO/IEC/IEEE 42010; see `process/architecture-description.md` of the framework |
 | 9 | No technical solution names: only conceptual classes of the Product Owner's world, never a file, an environment variable, a setting source, a database, a table, an API, a service, a cache or any other mechanism | Mandatory | Maintainability, Functional Suitability | Technical solutions first appear in the SD, DCD and ERD; a concept that exists only because of a technical choice does not belong |
 | 10 | No empty concept: every concept has at least one attribute and at least one association | Mandatory | Maintainability, Functional Suitability | A concept with nothing to say is an attribute, an association name or not a concept |
+| 11 | A Domain Model written for one use case reuses the concepts, attributes, associations and names of the project Domain Model, and its additions and changes are added to the project Domain Model | Mandatory | Maintainability, Functional Suitability | Not applicable to the project Domain Model itself; two models for the same thing, or a use case model never merged, make the project model drift |
 
 ## Common Defects
 
 - Modeling database tables or classes instead of business concepts
 - A concept named after a technical solution ("config from file", "environment variable", "cache")
 - A concept with no attributes or no associations, drawn as an empty box
+- A use case model that draws a concept the project Domain Model already has under another name, or whose additions never reach the project Domain Model
 - Including operations/methods on domain concepts
 - Missing or incorrect multiplicities on key associations
 - Unnamed or ambiguously-directioned associations
