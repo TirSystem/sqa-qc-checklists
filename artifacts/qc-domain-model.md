@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-08 | Deprecated | Jens Tirsvad Nielsen | S07 | Removed the obsolete DomainLanguages metadata row; the register is per artifact type in the project registry (issue 6); accepted by the author in chat as stand-in for S07, not independent | [ce06e14] |
-| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | S07 | Added criteria 9 to 11 (no technical solution names; no empty concept; a use case model matches and is added to the project Domain Model) and three common defects; accepted by the author in chat as stand-in for S07, not independent | pending |
+| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | S07 | Added criteria 9 to 11 (no technical solution names; no empty concept; a use case model matches and is added to the project Domain Model) and three common defects; accepted by the author in chat as stand-in for S07, not independent | [4475a6a] |
 
 ---
 
@@ -62,3 +62,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [f9409f9]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/f9409f9260b24321b8f9a11b8ce3c40698fae9ac
 [ce06e14]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/ce06e14cbe173c007b78858bd8a5474d1668e9ab
 [5596e86]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/5596e86f5ae01b9640b90b1e40764aba48e171d0
+[4475a6a]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/4475a6accf10999e56d74e9e9f9714335b7e64a3
