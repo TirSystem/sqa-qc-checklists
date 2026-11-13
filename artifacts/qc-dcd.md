@@ -9,8 +9,6 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-26 | Deprecated | Jens Tirsvad Nielsen | S02 | Added criterion 10 (the Purpose names the concerns the view answers); accepted by the author as stand-in for S02 on the user's instruction in chat on 2026-10-26, through the pull request that merges this row; not independent | [f9409f9] |
-| 2026-11-08 | Deprecated | Jens Tirsvad Nielsen | S02 | Removed the obsolete DomainLanguages metadata row; the register is per artifact type in the project registry (issue 6); accepted by the author in chat as stand-in for S02, not independent | [ce06e14] |
 | 2026-11-13 | Deprecated | Jens Tirsvad Nielsen | S02 | Added criterion 11 (a layered architecture keeps its package structure and dependency rules in the diagram) | [c855322] |
 | 2026-11-13 | Accepted | Jens Tirsvad Nielsen | S02 | Added criterion 12 (each layer in its fixed pastel colour); accepted by the author in chat as stand-in for S02, not independent | — |
 
@@ -65,8 +63,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-CL-001]: ../code/qc-programming-c.md
 [QC-CPP-001]: ../code/qc-programming-cpp.md
 [QC-CS-001]: ../code/qc-programming-csharp.md
-[b5e5613]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/b5e5613a384527a18cd40594fc24cac4bdd11a31
-[404f664]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9
-[f9409f9]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/f9409f9260b24321b8f9a11b8ce3c40698fae9ac
-[ce06e14]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/ce06e14cbe173c007b78858bd8a5474d1668e9ab
 [c855322]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/c855322ae37d637b7a6dd141d7d1f22283bdc1ec

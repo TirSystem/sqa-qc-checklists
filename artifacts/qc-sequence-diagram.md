@@ -9,8 +9,6 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-26 | Deprecated | Jens Tirsvad Nielsen | S07 | Added criterion 9 (the Purpose names the concerns the view answers); accepted by the author as stand-in for S07 on the user's instruction in chat on 2026-10-26, through the pull request that merges this row; not independent | [f9409f9] |
-| 2026-11-08 | Deprecated | Jens Tirsvad Nielsen | S07 | Removed the obsolete DomainLanguages metadata row; the register is per artifact type in the project registry (issue 6); accepted by the author in chat as stand-in for S07, not independent | [ce06e14] |
 | 2026-11-13 | Deprecated | Jens Tirsvad Nielsen | S07 | Added criterion 10 (a layered architecture shows its layers in the diagram) | [c855322] |
 | 2026-11-13 | Accepted | Jens Tirsvad Nielsen | S07 | Added criterion 11 (each layer in its fixed pastel colour); accepted by the author in chat as stand-in for S07, not independent | — |
 
@@ -59,6 +57,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 
 [QC-OC-001]: ./qc-operation-contract.md
 [QC-DCD-001]: ./qc-dcd.md
-[f9409f9]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/f9409f9260b24321b8f9a11b8ce3c40698fae9ac
-[ce06e14]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/ce06e14cbe173c007b78858bd8a5474d1668e9ab
 [c855322]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/c855322ae37d637b7a6dd141d7d1f22283bdc1ec
