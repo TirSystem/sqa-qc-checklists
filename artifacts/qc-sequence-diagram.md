@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-13 | Deprecated | Jens Tirsvad Nielsen | S07 | Added criterion 10 (a layered architecture shows its layers in the diagram) | [c855322] |
-| 2026-11-13 | Accepted | Jens Tirsvad Nielsen | S07 | Added criterion 11 (each layer in its fixed pastel colour); accepted by the author in chat as stand-in for S07, not independent | — |
+| 2026-11-13 | Accepted | Jens Tirsvad Nielsen | S07 | Added criterion 11 (each layer in its fixed pastel colour); accepted by the author in chat as stand-in for S07, not independent | [5f650d2] |
 
 ---
 
@@ -58,3 +58,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-OC-001]: ./qc-operation-contract.md
 [QC-DCD-001]: ./qc-dcd.md
 [c855322]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/c855322ae37d637b7a6dd141d7d1f22283bdc1ec
+[5f650d2]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/5f650d2a6a870dbaeddf4ee21fc6e1566e91606f
