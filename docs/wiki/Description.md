@@ -8,7 +8,7 @@ Every `qc-<type>.md` (in `artifacts/` for documents, in `code/` for source code,
 
 | Section | Content |
 | --- | --- |
-| `## Metadata` | `ID` (e.g. `QC-US-001`), `CrossReference` to related checklists, `DomainLanguages` |
+| `## Metadata` | `ID` (e.g. `QC-US-001`), `CrossReference` to related checklists |
 | `## Version History` | Date, status, author, reviewer, change |
 | `## Purpose` | Why the artifact type exists and what the checklist protects |
 | `## Quality Criteria Checklist` | The numbered criteria table |

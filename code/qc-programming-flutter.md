@@ -5,13 +5,12 @@
 | --- | --- |
 | ID | QC-FL-001 |
 | CrossReference | [QC-DCD-001], [QC-ADR-001] |
-| DomainLanguages | IT Professional English |
 
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-18 | Deprecated | Jens Tirsvad Nielsen | S02 | Created with the Flutter conventions of the `coding-conventions` skill | [772e160] |
-| 2026-10-22 | Accepted | Jens Tirsvad Nielsen | S02 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083); accepted by the author as stand-in for S02 on the user's instruction in chat on 2026-10-26, through the pull request that merges this row; not independent | [404f664] |
+| 2026-10-22 | Deprecated | Jens Tirsvad Nielsen | S02 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083); accepted by the author as stand-in for S02 on the user's instruction in chat on 2026-10-26, through the pull request that merges this row; not independent | [404f664] |
+| 2026-11-08 | Accepted | Jens Tirsvad Nielsen | S02 | Removed the obsolete DomainLanguages metadata row; the register is per artifact type in the project registry (issue 6); accepted by the author in chat as stand-in for S02, not independent | [ce06e14] |
 
 ---
 
@@ -70,3 +69,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-ADR-001]: ../artifacts/qc-adr.md
 [772e160]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/772e1604b9f2911fd6780b88ae2425e2e522ec68
 [404f664]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9
+[ce06e14]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/ce06e14cbe173c007b78858bd8a5474d1668e9ab
