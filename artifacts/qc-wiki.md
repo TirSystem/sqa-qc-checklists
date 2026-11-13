@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-29 | Proposed | Jens Tirsvad Nielsen | S02 | Initial version: the sidebar, the language sections and the page set of a wiki | [f175606] |
+| 2026-10-29 | Accepted | Jens Tirsvad Nielsen | S02 | Initial version: the sidebar, the language sections and the page set of a wiki; accepted by the author in chat as stand-in for S02, not independent | [f175606] |
 
 ---
 
