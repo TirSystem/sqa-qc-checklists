@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-26 | Proposed | mikemike | S07 | Added criteria 11 to 13: blocking findings, risk exceptions, Pending criteria closed only by a person | [8871564] |
-| 2026-11-13 | Proposed | Jens Tirsvad Nielsen | S07 | Removed the obsolete DomainLanguages metadata row; the register is per artifact type in the project registry (issue 6) | [f877710] |
+| 2026-10-26 | Deprecated | mikemike | S07 | Added criteria 11 to 13: blocking findings, risk exceptions, Pending criteria closed only by a person | [8871564] |
+| 2026-11-13 | Accepted | Jens Tirsvad Nielsen | S07 | Removed the obsolete DomainLanguages metadata row; the register is per artifact type in the project registry (issue 6); accepted by the author in chat as stand-in for S07, not independent | [f877710] |
 
 Allowed Status values: `Proposed`, `Accepted`, `Rejected`, `Deprecated`. The latest reviewed row is `Accepted`; the row before it is `Deprecated`.
 

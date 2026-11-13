@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-27 | Proposed | Jens Tirsvad Nielsen | S07 | Common Defects for criteria 1, 2, 9, 11, 12, 14 and 15; criterion 15 cites the rule of the artifact skill (RC-088) | [fcd6cef] |
-| 2026-11-13 | Proposed | Jens Tirsvad Nielsen | S07 | Removed the obsolete DomainLanguages metadata row; the register is per artifact type in the project registry (issue 6) | [f877710] |
+| 2026-10-27 | Deprecated | Jens Tirsvad Nielsen | S07 | Common Defects for criteria 1, 2, 9, 11, 12, 14 and 15; criterion 15 cites the rule of the artifact skill (RC-088) | [fcd6cef] |
+| 2026-11-13 | Accepted | Jens Tirsvad Nielsen | S07 | Removed the obsolete DomainLanguages metadata row; the register is per artifact type in the project registry (issue 6); accepted by the author in chat as stand-in for S07, not independent | [f877710] |
 
 ---
 
