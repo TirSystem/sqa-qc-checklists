@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-26 | Proposed | mikemike | S07 | Added criteria 11 to 13: blocking findings, risk exceptions, Pending criteria closed only by a person | [8871564] |
-| 2026-11-13 | Proposed | Jens Tirsvad Nielsen | S07 | Removed the obsolete DomainLanguages metadata row; the register is per artifact type in the project registry (issue 6) | pending |
+| 2026-11-13 | Proposed | Jens Tirsvad Nielsen | S07 | Removed the obsolete DomainLanguages metadata row; the register is per artifact type in the project registry (issue 6) | [f877710] |
 
 Allowed Status values: `Proposed`, `Accepted`, `Rejected`, `Deprecated`. The latest reviewed row is `Accepted`; the row before it is `Deprecated`.
 
@@ -63,3 +63,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-SA-001]: ./qc-stakeholder-analysis.md
 [QC-BPMN-001]: ./qc-bpmn.md
 [8871564]: https://git.tirsystem.com/TirSystem/sqa-qc-checklists/commit/887156429336277d61568d8452f72d6d0907b819
+[f877710]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/f8777105909449d04d3ebe680b0f75bc24f7f958
