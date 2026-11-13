@@ -12,6 +12,7 @@
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-22 | Deprecated | Jens Tirsvad Nielsen | S02 | Renamed the ISO/IEC 25010 tags to the 2023 names: Usability to Interaction Capability, Portability to Flexibility (RC-083) | [404f664] |
 | 2026-10-26 | Accepted | Jens Tirsvad Nielsen | S02 | Added criterion 10 (the Purpose names the concerns the view answers); accepted by the author as stand-in for S02 on the user's instruction in chat on 2026-10-26, through the pull request that merges this row; not independent | [f9409f9] |
+| 2026-11-13 | Proposed | Jens Tirsvad Nielsen | S02 | Added criterion 11 (a layered architecture keeps its package structure and dependency rules in the diagram) | — |
 
 ---
 
@@ -35,6 +36,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 8 | No circular dependencies between classes/packages unless explicitly justified | Optional | Maintainability, Reliability | Circular coupling harms testability and portability |
 | 9 | Dependencies between classes and packages point inward: domain classes do not depend on infrastructure, delivery or framework classes | Mandatory | Maintainability, Flexibility | Business rules must be buildable and testable without the outer layers; cycles are criterion 8 |
 | 10 | The Purpose names the concerns (`CN-NNN`) the Design Class Diagram answers and the stakeholders it serves, so its viewpoint is stated | Optional | Interaction Capability, Maintainability | Viewpoint of ISO/IEC/IEEE 42010; see `process/architecture-description.md` of the framework |
+| 11 | When the design uses a layered architecture (Clean, Hexagonal, Onion or similar), the diagram has one package per layer, every class sits in exactly one package, the package dependencies are shown, and the inner layers own the interfaces the outer layers implement | Mandatory | Maintainability, Flexibility | Applies only if the architecture is layered; the package names match the layers of the Sequence Diagram; the inward direction is criterion 9 |
 
 ## Common Defects
 
@@ -45,6 +47,7 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 - Unannotated or inconsistently applied design patterns
 - Domain classes that depend on persistence, user-interface or framework classes
 - A Design Class Diagram whose Purpose does not say which concerns it answers
+- A layered design whose Design Class Diagram has no packages for the layers, a class in no layer or in two, or an inner layer that depends on the concrete class of an outer layer instead of owning the interface
 
 ## Traceability Rule
 
