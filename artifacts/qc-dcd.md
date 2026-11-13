@@ -10,9 +10,9 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-26 | Deprecated | Jens Tirsvad Nielsen | S02 | Added criterion 10 (the Purpose names the concerns the view answers); accepted by the author as stand-in for S02 on the user's instruction in chat on 2026-10-26, through the pull request that merges this row; not independent | [f9409f9] |
-| 2026-11-08 | Accepted | Jens Tirsvad Nielsen | S02 | Removed the obsolete DomainLanguages metadata row; the register is per artifact type in the project registry (issue 6); accepted by the author in chat as stand-in for S02, not independent | [ce06e14] |
-| 2026-11-13 | Proposed | Jens Tirsvad Nielsen | S02 | Added criterion 11 (a layered architecture keeps its package structure and dependency rules in the diagram) | [c855322] |
-| 2026-11-13 | Proposed | Jens Tirsvad Nielsen | S02 | Added criterion 12 (each layer in its fixed pastel colour) | — |
+| 2026-11-08 | Deprecated | Jens Tirsvad Nielsen | S02 | Removed the obsolete DomainLanguages metadata row; the register is per artifact type in the project registry (issue 6); accepted by the author in chat as stand-in for S02, not independent | [ce06e14] |
+| 2026-11-13 | Deprecated | Jens Tirsvad Nielsen | S02 | Added criterion 11 (a layered architecture keeps its package structure and dependency rules in the diagram) | [c855322] |
+| 2026-11-13 | Accepted | Jens Tirsvad Nielsen | S02 | Added criterion 12 (each layer in its fixed pastel colour); accepted by the author in chat as stand-in for S02, not independent | — |
 
 ---
 
