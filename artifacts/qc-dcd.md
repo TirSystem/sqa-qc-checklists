@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-13 | Deprecated | Jens Tirsvad Nielsen | S02 | Added criterion 11 (a layered architecture keeps its package structure and dependency rules in the diagram) | [c855322] |
-| 2026-11-13 | Accepted | Jens Tirsvad Nielsen | S02 | Added criterion 12 (each layer in its fixed pastel colour); accepted by the author in chat as stand-in for S02, not independent | — |
+| 2026-11-13 | Accepted | Jens Tirsvad Nielsen | S02 | Added criterion 12 (each layer in its fixed pastel colour); accepted by the author in chat as stand-in for S02, not independent | [5f650d2] |
 
 ---
 
@@ -64,3 +64,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-CPP-001]: ../code/qc-programming-cpp.md
 [QC-CS-001]: ../code/qc-programming-csharp.md
 [c855322]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/c855322ae37d637b7a6dd141d7d1f22283bdc1ec
+[5f650d2]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/5f650d2a6a870dbaeddf4ee21fc6e1566e91606f
