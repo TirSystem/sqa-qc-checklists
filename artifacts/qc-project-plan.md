@@ -69,5 +69,5 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-SA-001]: ./qc-stakeholder-analysis.md
 [QC-MIL-001]: ./qc-milestones-gateways.md
 [QC-GOV-001]: ./qc-governance.md
-[fcd6cef]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/fcd6cefb75d16dba37a073c24f3c123ee3033c53
-[f877710]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/f8777105909449d04d3ebe680b0f75bc24f7f958
+[fcd6cef]: https://git.tirsystem.com/TirSystem/sqa-qc-checklists/commit/fcd6cefb75d16dba37a073c24f3c123ee3033c53
+[f877710]: https://git.tirsystem.com/TirSystem/sqa-qc-checklists/commit/f8777105909449d04d3ebe680b0f75bc24f7f958

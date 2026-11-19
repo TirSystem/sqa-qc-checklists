@@ -61,5 +61,5 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-DCD-001]: ../artifacts/qc-dcd.md
 [QC-ADR-001]: ../artifacts/qc-adr.md
 [QC-WF-001]: ./qc-workflow.md
-[140bc3c]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/140bc3c12df74238e332ff149243ef3e6255e208
-[404f664]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9
+[140bc3c]: https://git.tirsystem.com/TirSystem/sqa-qc-checklists/commit/140bc3c12df74238e332ff149243ef3e6255e208
+[404f664]: https://git.tirsystem.com/TirSystem/sqa-qc-checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9

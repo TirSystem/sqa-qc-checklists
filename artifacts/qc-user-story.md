@@ -52,6 +52,6 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-UCD-001]: ./qc-use-case-diagram.md
 [QC-UC-001]: ./qc-use-case.md
 [QC-BC-001]: ./qc-business-case.md
-[b818ee7]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/b818ee7f007b69282461bc616a48dd5871cedad6
-[404f664]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9
-[ce06e14]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/ce06e14cbe173c007b78858bd8a5474d1668e9ab
+[b818ee7]: https://git.tirsystem.com/TirSystem/sqa-qc-checklists/commit/b818ee7f007b69282461bc616a48dd5871cedad6
+[404f664]: https://git.tirsystem.com/TirSystem/sqa-qc-checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9
+[ce06e14]: https://git.tirsystem.com/TirSystem/sqa-qc-checklists/commit/ce06e14cbe173c007b78858bd8a5474d1668e9ab

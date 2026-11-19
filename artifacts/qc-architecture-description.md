@@ -58,5 +58,5 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-ERD-001]: ./qc-erd.md
 [QC-ADR-001]: ./qc-adr.md
 [QC-TP-001]: ./qc-test-plan.md
-[f9409f9]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/f9409f9260b24321b8f9a11b8ce3c40698fae9ac
-[ce06e14]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/ce06e14cbe173c007b78858bd8a5474d1668e9ab
+[f9409f9]: https://git.tirsystem.com/TirSystem/sqa-qc-checklists/commit/f9409f9260b24321b8f9a11b8ce3c40698fae9ac
+[ce06e14]: https://git.tirsystem.com/TirSystem/sqa-qc-checklists/commit/ce06e14cbe173c007b78858bd8a5474d1668e9ab

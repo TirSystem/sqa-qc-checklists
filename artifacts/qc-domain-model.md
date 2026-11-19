@@ -61,8 +61,8 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-UC-001]: ./qc-use-case.md
 [QC-UCD-001]: ./qc-use-case-diagram.md
 [QC-SSD-001]: ./qc-ssd.md
-[404f664]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9
-[f9409f9]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/f9409f9260b24321b8f9a11b8ce3c40698fae9ac
-[5596e86]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/5596e86f5ae01b9640b90b1e40764aba48e171d0
-[4475a6a]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/4475a6accf10999e56d74e9e9f9714335b7e64a3
-[2c615ac]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/2c615ac7bfafc79ba24716c4395310a68d899ca4
+[404f664]: https://git.tirsystem.com/TirSystem/sqa-qc-checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9
+[f9409f9]: https://git.tirsystem.com/TirSystem/sqa-qc-checklists/commit/f9409f9260b24321b8f9a11b8ce3c40698fae9ac
+[5596e86]: https://git.tirsystem.com/TirSystem/sqa-qc-checklists/commit/5596e86f5ae01b9640b90b1e40764aba48e171d0
+[4475a6a]: https://git.tirsystem.com/TirSystem/sqa-qc-checklists/commit/4475a6accf10999e56d74e9e9f9714335b7e64a3
+[2c615ac]: https://git.tirsystem.com/TirSystem/sqa-qc-checklists/commit/2c615ac7bfafc79ba24716c4395310a68d899ca4
