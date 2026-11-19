@@ -106,5 +106,5 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-SH-001]: ./qc-programming-shell.md
 [QC-PY-001]: ./qc-programming-python.md
 [QC-ADR-001]: ../artifacts/qc-adr.md
-[a686ac1]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/a686ac140157cf6c607bef8d96959cd4ce8d0468
-[404f664]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9
+[a686ac1]: https://git.tirsystem.com/TirSystem/sqa-qc-checklists/commit/a686ac140157cf6c607bef8d96959cd4ce8d0468
+[404f664]: https://git.tirsystem.com/TirSystem/sqa-qc-checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9

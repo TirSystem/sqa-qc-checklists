@@ -57,5 +57,5 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 
 [QC-OC-001]: ./qc-operation-contract.md
 [QC-DCD-001]: ./qc-dcd.md
-[c855322]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/c855322ae37d637b7a6dd141d7d1f22283bdc1ec
-[5f650d2]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/5f650d2a6a870dbaeddf4ee21fc6e1566e91606f
+[c855322]: https://git.tirsystem.com/TirSystem/sqa-qc-checklists/commit/c855322ae37d637b7a6dd141d7d1f22283bdc1ec
+[5f650d2]: https://git.tirsystem.com/TirSystem/sqa-qc-checklists/commit/5f650d2a6a870dbaeddf4ee21fc6e1566e91606f

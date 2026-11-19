@@ -55,4 +55,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 
 [QC-DICT-001]: ./qc-dictionary.md
 [7024240]: https://git.tirsystem.com/TirSystem/sqa-qc-checklists/commit/70242402e2c93842a1c099e1cb6d902af0d79ef2
-[404f664]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9
+[404f664]: https://git.tirsystem.com/TirSystem/sqa-qc-checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9
