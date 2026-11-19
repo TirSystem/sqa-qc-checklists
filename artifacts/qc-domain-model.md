@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-08 | Deprecated | Jens Tirsvad Nielsen | S07 | Removed the obsolete DomainLanguages metadata row; the register is per artifact type in the project registry (issue 6); accepted by the author in chat as stand-in for S07, not independent | [ce06e14] |
 | 2026-11-12 | Accepted | Jens Tirsvad Nielsen | S07 | Added criteria 9 to 11 (no technical solution names; no empty concept; a use case model matches and is added to the project Domain Model) and three common defects; accepted by the author in chat as stand-in for S07, not independent | [4475a6a] |
+| 2026-11-19 | Proposed | Jens Tirsvad Nielsen | S07 | Added criterion 12 (the software is a black box and a normal person can read the model) and two common defects | [2c615ac] |
 
 ---
 
@@ -35,12 +35,15 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 | 9 | No technical solution names: only conceptual classes of the Product Owner's world, never a file, an environment variable, a setting source, a database, a table, an API, a service, a cache or any other mechanism | Mandatory | Maintainability, Functional Suitability | Technical solutions first appear in the SD, DCD and ERD; a concept that exists only because of a technical choice does not belong |
 | 10 | No empty concept: every concept has at least one attribute and at least one association | Mandatory | Maintainability, Functional Suitability | A concept with nothing to say is an attribute, an association name or not a concept |
 | 11 | A Domain Model written for one use case reuses the concepts, attributes, associations and names of the project Domain Model, and its additions and changes are added to the project Domain Model | Mandatory | Maintainability, Functional Suitability | Not applicable to the project Domain Model itself; two models for the same thing, or a use case model never merged, make the project model drift |
+| 12 | The software is a black box and a normal person can read the model: no concept or attribute exists only because the software exists (a run, command, option, mode, step, exit code, log, session, question, prompt, summary or other screen or tool element); no attribute is computed from other concepts, and none is an identifier or a storage type; every concept in the Concept Table has a one-sentence definition in everyday words with no IT term | Mandatory | Maintainability, Interaction Capability | Read the model as a reader who is not in IT and has not seen the software; delete what needs the software explained. Tool and screen elements first appear in the OC, SD and DCD |
 
 ## Common Defects
 
 - Modeling database tables or classes instead of business concepts
 - A concept named after a technical solution ("config from file", "environment variable", "cache")
 - A concept with no attributes or no associations, drawn as an empty box
+- A concept or an attribute taken from the tool or its screen ("run", "command", "dry run", "question", "summary", "exit code"), or an attribute that is a count or a total of other concepts
+- A Concept Table with no definition in everyday words, or a definition that uses an IT term
 - A use case model that draws a concept the project Domain Model already has under another name, or whose additions never reach the project Domain Model
 - Including operations/methods on domain concepts
 - Missing or incorrect multiplicities on key associations
@@ -60,6 +63,6 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [QC-SSD-001]: ./qc-ssd.md
 [404f664]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/404f66454eb129463cf0982b425ad16707bd66a9
 [f9409f9]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/f9409f9260b24321b8f9a11b8ce3c40698fae9ac
-[ce06e14]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/ce06e14cbe173c007b78858bd8a5474d1668e9ab
 [5596e86]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/5596e86f5ae01b9640b90b1e40764aba48e171d0
 [4475a6a]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/4475a6accf10999e56d74e9e9f9714335b7e64a3
+[2c615ac]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/2c615ac7bfafc79ba24716c4395310a68d899ca4
