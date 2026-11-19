@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-12 | Accepted | Jens Tirsvad Nielsen | S07 | Added criteria 9 to 11 (no technical solution names; no empty concept; a use case model matches and is added to the project Domain Model) and three common defects; accepted by the author in chat as stand-in for S07, not independent | [4475a6a] |
-| 2026-11-19 | Proposed | Jens Tirsvad Nielsen | S07 | Added criterion 12 (the software is a black box and a normal person can read the model) and two common defects | pending |
+| 2026-11-19 | Proposed | Jens Tirsvad Nielsen | S07 | Added criterion 12 (the software is a black box and a normal person can read the model) and two common defects | [2c615ac] |
 
 ---
 
@@ -65,3 +65,4 @@ Level: **Mandatory** criteria are the baseline every instance must meet; **Optio
 [f9409f9]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/f9409f9260b24321b8f9a11b8ce3c40698fae9ac
 [5596e86]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/5596e86f5ae01b9640b90b1e40764aba48e171d0
 [4475a6a]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/4475a6accf10999e56d74e9e9f9714335b7e64a3
+[2c615ac]: https://git.tirsystem.com/TirSystem/SQA-QC-Checklists/commit/2c615ac7bfafc79ba24716c4395310a68d899ca4
